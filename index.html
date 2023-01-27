@@ -8,60 +8,72 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
     />
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="style.css" />
     <title>Twitter</title>
   </head>
   <body>
     <div class="container">
-      <nav class="sidenavbar-left">
-        <button>
-          <i class="fa-brands fa-twitter"></i>
+      <nav class="sidenavbar_left">
+        <button class="sidenavbar_left_buttons">
+          <i class="fa-brands fa-twitter twitter_logo"></i>
         </button>
-        <button>
+        <button class="sidenavbar_left_buttons home_btn">
           <i class="fa-solid fa-house"></i>
-          Home
+          &nbsp;Home
         </button>
-        <button>
+        <button class="sidenavbar_left_buttons">
           <i class="fa-regular fa-hashtag"></i>
-          Explore
+          &nbsp;Explore
         </button>
-        <button>
+        <button class="sidenavbar_left_buttons">
           <i class="fa-regular fa-bell"></i>
-          Notifications
+          &nbsp;Notifications
         </button>
-        <button>
+        <button class="sidenavbar_left_buttons">
           <i class="fa-regular fa-envelope"></i>
-          Messages
+          &nbsp;Messages
         </button>
-        <button>
+        <button class="sidenavbar_left_buttons">
           <i class="fa-regular fa-bookmark"></i>
-          Bookmarks
+          &nbsp;Bookmarks
         </button>
-        <button>
-          <i class="fa-light fa-list-check"></i>
-          Lists
+        <button class="sidenavbar_left_buttons">
+          <i class="fa-solid fa-list"></i>
+          &nbsp;Lists
         </button>
-        <button>
+        <button class="sidenavbar_left_buttons">
           <i class="fa-regular fa-user"></i>
-          Profile
+          &nbsp;Profile
         </button>
-        <button>
-            <i class="fa-duotone fa-circle-ellipsis"></i>
-            More
+        <button class="sidenavbar_left_buttons">
+          <i class="fa fa-ellipsis-h" aria-hidden="true"></i>
+          &nbsp;More
         </button>
-        <button>Tweet</button>
-        <img src="images/myphoto.jpg" alt="myphoto" />
+        <button class="tweet_button">Tweet</button>
+        <div class="swati_account">
+          <img src="images/myphoto.jpg" alt="myphoto" class="my_photo" />
+          <h3>Swati Thorat @swatic019</h3>
+          <i class="fa fa-ellipsis-h" aria-hidden="true"></i>
+          </div>
       </nav>
 
       <div class="home_page">
-        <div class="tweet_buttons">
-          <button>For you</button>
-          <button>Following</button>
-          <button>Cricket</button>
-          <button>Bollywood</button>
+        <h3 class="h3_home">Home</h3>
+        <div class="explore_tweets_buttons">
+          <button class="explore_button">For you</button>
+          <button class="explore_button">Following</button>
+          <button class="explore_button">Cricket</button>
+          <button class="explore_button">Bollywood</button>
         </div>
         <div class="post_tweet">
-          <img src="images/myphoto.jpg" alt="myphoto" />
+          <img src="images/myphoto.jpg" alt="myphoto" class="my_photo" />
           <h2>What's happening?</h2>
         </div>
         <div class="links_tweet">
@@ -71,7 +83,7 @@
           <i class="fa-regular fa-face-smile"></i>
           <i class="fa-regular fa-calendar-days"></i>
           <i class="fa-solid fa-location-dot"></i>
-          <button>Tweet</button>
+          <button class="tweet_button">Tweet</button>
         </div>
         <div class="show_tweets">
           <h3>Show 35 Tweets</h3>
@@ -82,7 +94,7 @@
           magnam. Blanditiis quis esse magnam quod.
         </div>
       </div>
-      <div class="sidenavbar-right">
+      <div class="sidenavbar_right">
         <div>
           <input
             type="search"
@@ -134,21 +146,29 @@
 
         <div class="who_to_follow">
           <div class="people_profile">
-            <img src="images/myphoto.jpg" alt="tusharKumarPhoto" />
+            <img
+              src="images/myphoto.jpg"
+              alt="tusharKumarPhoto"
+              class="my_photo"
+            />
             <h3>Tushar Kumar</h3>
             <p>@_prachand_</p>
             <button>Follow</button>
           </div>
 
           <div class="people_profile">
-            <img src="images/myphoto.jpg" alt="RaviRoushanSinha" />
+            <img
+              src="images/myphoto.jpg"
+              alt="RaviRoushanSinha"
+              class="my_photo"
+            />
             <h3>Ravi Roushan Sinha</h3>
             <p>@ravirrs1</p>
             <button>Follow</button>
           </div>
 
           <div class="people_profile">
-            <img src="images/myphoto.jpg" alt="JSWSteel" />
+            <img src="images/myphoto.jpg" alt="JSWSteel" class="my_photo" />
             <h3>JSW Steel</h3>
             <p>@jswsteel</p>
             <button>Follow</button>
