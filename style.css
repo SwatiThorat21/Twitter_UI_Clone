@@ -19,14 +19,22 @@ body {
   flex-direction: column;
   align-items: flex-start;
   width: 15rem;
-  background-color: blueviolet;
+  /* background-color: blueviolet; */
 }
 
+.sidenavbar_left_buttons {
+  font-family: "Roboto", sans-serif;
+  font-size: 1.2rem;
+  letter-spacing: 0.5px;
+  padding: 6px;
+  margin: 10px;
+  border: none;
+  background-color: white;
+}
 .home_page {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: flex-start;
   width: 45rem;
   background-color: antiquewhite;
   padding: 1rem;
@@ -38,16 +46,6 @@ body {
   align-items: flex-start;
   width: 23rem;
   background-color: aquamarine;
-}
-
-.sidenavbar_left_buttons {
-  font-family: "Roboto", sans-serif;
-  font-size: 1.2rem;
-  letter-spacing: 0.5px;
-  padding: 6px;
-  margin: 10px;
-  border: none;
-  background-color: white;
 }
 
 .home_btn {
@@ -70,21 +68,20 @@ body {
   color: white;
 }
 
-.swati_account {
-  display: grid;
-  grid-template-columns: 70px 138px auto;
-  /* grid-template-rows: ; */
-  margin-top: 3rem;
+#btn_for_you{
+  color: black;
+  font-weight: 700;
+  border-bottom: 4.4px solid #1da1f2;
+  border-radius: 4px;
+  
 }
-
 .h3_home {
-  align-items: left;
+  margin-left: -41rem;
   margin-top: 0;
 }
-
 .explore_tweets_buttons {
   display: grid;
-  grid-template-columns: repeat(4, 37%);
+  grid-template-columns: repeat(4, 38.8%);
   justify-content: center;
 }
 .explore_button {
@@ -95,5 +92,73 @@ body {
   margin: 0;
   border: none;
   background-color: white;
-  
+}
+
+.swati_account {
+  display: grid;
+  grid-template-columns: 70px 110px auto;
+  align-items: center;
+  margin-top: 3rem;
+  background-color: bisque;
+  padding: 8px 10px;
+}
+
+#swati_profile {
+  font-size: 0.8rem;
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+}
+
+.post_tweet {
+  display: flex;
+  align-items: center;
+  margin-left: -29rem;
+  gap: 1.5rem;
+  margin-top: 0.3rem;
+}
+.whats_happening {
+  font-family: "Roboto", sans-serif;
+  font-size: 1.32rem;
+  font-weight: 500;
+  color: #657786;
+}
+
+.links_tweet {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-left: 3rem;
+  margin-top: 1rem;
+}
+.tweet_button2 {
+  font-family: "Roboto", sans-serif;
+  font-size: 0.9rem;
+  width: 80%;
+  background-color: #1da1f28f;
+  padding: 7px 15px;
+  border: none;
+  border-radius: 30px;
+  color: white;
+  font-weight: 600;
+  letter-spacing: 0.7px;
+  margin-left: 22rem;
+}
+
+.icons {
+  color: #1da1f2;
+}
+
+.show_tweets {
+  margin: 1rem;
+}
+
+.show_tweets h3 {
+  font-family: "Roboto", sans-serif;
+  font-size: 1rem;
+  color: #1da1f2;
+  font-weight: 500;
+}
+
+.tweets_container{
+  margin: 1rem;
 }
