@@ -197,7 +197,7 @@ body {
 .tweets{
   display: flex;
   align-items: stretch;
-  /* gap: 4.2rem; */
+  padding: 1rem;
 }
 
 .tweets_content h3 {
@@ -221,5 +221,9 @@ body {
 }
 .p{
   padding-left: 0.8rem;
-  line-height: 3rem;
+  
+}
+
+.reply_tweet_id{
+color: #1da1f2;
 }
