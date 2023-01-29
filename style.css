@@ -149,15 +149,18 @@ body {
 
 .icons-2 {
   color: #657786;
+  margin-left: 0.8rem;
 }
 
-#icons-2{
-  margin-left: 1.6rem;
-  padding: 0.8rem;
+#icons-2 {
+  padding: 1.4rem;
 }
 
-#elonMusk_img{
+.tweet_image {
   border-radius: 12px;
+  width: 35rem;
+  height: 20rem;
+  margin-left: 0.8rem;
 }
 .show_tweets {
   margin: 1rem;
@@ -170,12 +173,12 @@ body {
   font-weight: 500;
 }
 
-.tweets_container {
-  margin-left: -8rem;
+/* .tweets_container {
+  
 }
 #more{
 
-}
+} */
 .--replied {
   display: flex;
   align-items: center;
@@ -194,7 +197,7 @@ body {
   width: 20px;
 }
 
-.tweets{
+.tweets {
   display: flex;
   align-items: stretch;
   padding: 1rem;
@@ -211,19 +214,21 @@ body {
   letter-spacing: 0.6px;
 }
 
-#tweet_id{
+.tweet_id {
   color: #657786;
+  font-size: 0.9rem;
+  font-weight: 500;
 }
 
-.p::after{
+.p::after {
   content: "\a";
   white-space: pre;
 }
-.p{
+.p,
+.p1, .p3 {
   padding-left: 0.8rem;
-  
 }
 
-.reply_tweet_id{
-color: #1da1f2;
+.reply_tweet_id {
+  color: #1da1f2;
 }

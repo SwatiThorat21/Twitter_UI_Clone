@@ -1,260 +1,301 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
-    />
 
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Roboto&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="style.css" />
-    <title>Twitter</title>
-  </head>
-  <body>
-    <div class="container">
-      <nav class="sidenavbar_left">
-        <button class="sidenavbar_left_buttons">
-          <i class="fa-brands fa-twitter twitter_logo"></i>
-        </button>
-        <button class="sidenavbar_left_buttons home_btn">
-          <i class="fa-solid fa-house"></i>
-          &nbsp;Home
-        </button>
-        <button class="sidenavbar_left_buttons">
-          <i class="fa-regular fa-hashtag"></i>
-          &nbsp;Explore
-        </button>
-        <button class="sidenavbar_left_buttons">
-          <i class="fa-regular fa-bell"></i>
-          &nbsp;Notifications
-        </button>
-        <button class="sidenavbar_left_buttons">
-          <i class="fa-regular fa-envelope"></i>
-          &nbsp;Messages
-        </button>
-        <button class="sidenavbar_left_buttons">
-          <i class="fa-regular fa-bookmark"></i>
-          &nbsp;Bookmarks
-        </button>
-        <button class="sidenavbar_left_buttons">
-          <i class="fa-solid fa-list"></i>
-          &nbsp;Lists
-        </button>
-        <button class="sidenavbar_left_buttons">
-          <i class="fa-regular fa-user"></i>
-          &nbsp;Profile
-        </button>
-        <button class="sidenavbar_left_buttons">
-          <i class="fa fa-ellipsis-h" aria-hidden="true"></i>
-          &nbsp;More
-        </button>
-        <button class="tweet_button">Tweet</button>
-        <div class="swati_account">
-          <img src="images/myphoto.jpg" alt="myphoto" class="my_photo" />
-          <h3 id="swati_profile"><b>Swati Thorat</b>@swatic019</h3>
-          <i class="fa fa-ellipsis-h" aria-hidden="true"></i>
-        </div>
-      </nav>
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" />
 
-      <div class="home_page">
-        <h3 class="h3_home">Home</h3>
-        <div class="explore_tweets_buttons">
-          <button class="explore_button" id="btn_for_you">For you</button>
-          <button class="explore_button">Following</button>
-          <button class="explore_button">Cricket</button>
-          <button class="explore_button">Bollywood</button>
-        </div>
-        <div class="post_tweet">
-          <img src="images/myphoto.jpg" alt="myphoto" class="my_photo" />
-          <h2 class="whats_happening">What's happening?</h2>
-        </div>
-        <div class="links_tweet">
-          <i class="fa-regular fa-image icons-1"></i>
-          <i class="fa-regular fa-image icons-1"></i>
-          <i class="fa-solid fa-square-poll-vertical icons-1"></i>
-          <i class="fa-regular fa-face-smile icons-1"></i>
-          <i class="fa-regular fa-calendar-days icons-1"></i>
-          <i class="fa-solid fa-location-dot icons-1"></i>
-          <button class="tweet_button2">Tweet</button>
-        </div>
-        <div class="show_tweets">
-          <h3>Show 35 Tweets</h3>
-        </div>
-        <div class="tweets_container">
-          <div class="--replied">
-            <i class="fa-solid fa-comment"></i>
-            <p>Elon Musk replied</p>
-          </div>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+  <title>Twitter</title>
+</head>
 
-          <!-- ///// first tweet-->
-          <div class="tweets">
-            <div>
-              <img src="images/johnErlichman.jpg" class="my_photo" alt="johnErlichman" />
-            </div>
-            <div class="tweets_content">
-              <h3>
-                <span>Jon Erlichman</span>
-                <img src="images/blue-tick.png" class="tweet_img"/> <span id="tweet_id">@JonErlichman . Jan 22</span>
-              </h3>
-              <p>
-                <span class="p" style="line-height: 3rem;">Tesla got started 20 years ago.</span> 
-                <span class="p" style="line-height: 3rem;">At the time, it was unclear if the company would ever sell one vehicle.</span> 
-                <span class="p"style="line-height: 3rem;">Last year, it sold more than 1 million.</span> 
-                <span class="p"style="line-height: 3rem;">And this year, Tesla's revenue may top $100 billion.</span>
-                <span class="p"style="line-height: 3rem;">Here are 8 influential momemnts from the past two decades...<img src="images/hand-down.png" class="tweet_img"></img><img src="images/thread-reel.png" class="tweet_img"></img></span>
-              </p>
-              <img src="images/ElonMusk (1).jpg" id="elonMusk_img" alt="ElonMusk">
-              <div class="tweet_reply_links">
-                <i class="fa-regular fa-comment icons-2"></i></i> 538
-                <i class="fa-solid fa-retweet icons-2" id="icons-2"></i> 2340
-                <i class="fa-regular fa-heart icons-2" id="icons-2"></i></i> 26.2k
-                <i class="fa-sharp fa-solid fa-chart-simple icons-2" id="icons-2"></i> 6.6M
-                <i class="fa-solid fa-arrow-up-from-bracket icons-2" id="icons-2"></i>
-
-              </div>
-              
-            </div>
-
-            <div id="more">
-              <i class="fa fa-ellipsis-h" aria-hidden="true"></i>
-            </div>
-          </div>
-          <!-- /// -->
-
-          <!-- ///// reply to first tweet-->
-<div class="tweets">
-  <div>
-    <img src="images/ElonMusk.jpg" class="my_photo" alt="ElonMusk" />
-  </div>
-  <div class="tweets_content">
-    <h3>
-      <span>Elon Musk</span>
-      <img src="images/blue-tick.png" class="tweet_img"/> <span id="tweet_id">@elonmusk . Jan 23</span>
-    </h3>
-    <p class="p" style="color:#657786;">Replying to <span class="reply_tweet_id">@JonErlichman</span></p>
-    <p class="p">Good thread</p>
-      <div class="tweet_reply_links">
-      <i class="fa-regular fa-comment icons-2"></i></i> 1,069
-      <i class="fa-solid fa-retweet icons-2" id="icons-2"></i> 1,178
-      <i class="fa-regular fa-heart icons-2" id="icons-2"></i></i> 28.2k
-      <i class="fa-sharp fa-solid fa-chart-simple icons-2" id="icons-2"></i> 5M
-      <i class="fa-solid fa-arrow-up-from-bracket icons-2" id="icons-2"></i>
-    </div>
+<body>
+  <div class="container">
+    <nav class="sidenavbar_left">
+      <button class="sidenavbar_left_buttons">
+        <i class="fa-brands fa-twitter twitter_logo"></i>
+      </button>
+      <button class="sidenavbar_left_buttons home_btn">
+        <i class="fa-solid fa-house"></i>
+        &nbsp;Home
+      </button>
+      <button class="sidenavbar_left_buttons">
+        <i class="fa-regular fa-hashtag"></i>
+        &nbsp;Explore
+      </button>
+      <button class="sidenavbar_left_buttons">
+        <i class="fa-regular fa-bell"></i>
+        &nbsp;Notifications
+      </button>
+      <button class="sidenavbar_left_buttons">
+        <i class="fa-regular fa-envelope"></i>
+        &nbsp;Messages
+      </button>
+      <button class="sidenavbar_left_buttons">
+        <i class="fa-regular fa-bookmark"></i>
+        &nbsp;Bookmarks
+      </button>
+      <button class="sidenavbar_left_buttons">
+        <i class="fa-solid fa-list"></i>
+        &nbsp;Lists
+      </button>
+      <button class="sidenavbar_left_buttons">
+        <i class="fa-regular fa-user"></i>
+        &nbsp;Profile
+      </button>
+      <button class="sidenavbar_left_buttons">
+        <i class="fa fa-ellipsis-h" aria-hidden="true"></i>
+        &nbsp;More
+      </button>
+      <button class="tweet_button">Tweet</button>
+      <div class="swati_account">
+        <img src="images/myphoto.jpg" alt="myphoto" class="my_photo" />
+        <h3 id="swati_profile"><b>Swati Thorat</b>@swatic019</h3>
+        <i class="fa fa-ellipsis-h" aria-hidden="true"></i>
       </div>
-  <div id="more">
-    <i class="fa fa-ellipsis-h" aria-hidden="true"></i>
-  </div>
-</div>
-<!-- /// -->
+    </nav>
 
-
-</div>
-
-    </div>
-      <div class="sidenavbar_right">
-        <div>
-          <input
-            type="search"
-            name="Search"
-            id="search_bar"
-            placeholder="Search Twitter"
-          />
+    <div class="home_page">
+      <h3 class="h3_home">Home</h3>
+      <div class="explore_tweets_buttons">
+        <button class="explore_button" id="btn_for_you">For you</button>
+        <button class="explore_button">Following</button>
+        <button class="explore_button">Cricket</button>
+        <button class="explore_button">Bollywood</button>
+      </div>
+      <div class="post_tweet">
+        <img src="images/myphoto.jpg" alt="myphoto" class="my_photo" />
+        <h2 class="whats_happening">What's happening?</h2>
+      </div>
+      <div class="links_tweet">
+        <i class="fa-regular fa-image icons-1"></i>
+        <i class="fa-regular fa-image icons-1"></i>
+        <i class="fa-solid fa-square-poll-vertical icons-1"></i>
+        <i class="fa-regular fa-face-smile icons-1"></i>
+        <i class="fa-regular fa-calendar-days icons-1"></i>
+        <i class="fa-solid fa-location-dot icons-1"></i>
+        <button class="tweet_button2">Tweet</button>
+      </div>
+      <div class="show_tweets">
+        <h3>Show 35 Tweets</h3>
+      </div>
+      <div class="tweets_container">
+        <div class="--replied">
+          <i class="fa-solid fa-comment"></i>
+          <p>Elon Musk replied</p>
         </div>
-        <div class="trending_tweet_title">
-          <h2>What's happening</h2>
 
-          <div class="trending_tweets">
-            <p>Technology.Trending</p>
-            <h2>#MicrosoftTeams</h2>
-            <p>2,990 Tweets</p>
+        <!-- ///// first tweet-->
+        <div class="tweets">
+          <div>
+            <img src="images/johnErlichman.jpg" class="my_photo" alt="johnErlichman" />
           </div>
-
-          <div class="trending_tweets">
-            <p>Entertainment.Trending</p>
-            <h2>#PathaanReview</h2>
+          <div class="tweets_content">
+            <h3>
+              <span>Jon Erlichman</span>
+              <img src="images/blue-tick.png" class="tweet_img" /> <span class="tweet_id">@JonErlichman . Jan 22</span>
+            </h3>
             <p>
-              Trending with <a href="">Blockbuster,</a
-              ><a href="">#DeepikaPadukone</a>
+              <span class="p" style="line-height: 3rem;">Tesla got started 20 years ago.</span>
+              <span class="p" style="line-height: 3rem;">At the time, it was unclear if the company would ever sell one
+                vehicle.</span>
+              <span class="p" style="line-height: 3rem;">Last year, it sold more than 1 million.</span>
+              <span class="p" style="line-height: 3rem;">And this year, Tesla's revenue may top $100 billion.</span>
+              <span class="p" style="line-height: 3rem;">Here are 8 influential momemnts from the past two
+                decades...<img src="images/hand-down.png" class="tweet_img"></img><img src="images/thread-reel.png"
+                  class="tweet_img"></img></span>
             </p>
+            <img src="images/ElonMusk (1).jpg" class="tweet_image" alt="ElonMusk">
+            <div class="tweet_reply_links">
+              <i class="fa-regular fa-comment icons-2"></i></i> 538
+              <i class="fa-solid fa-retweet icons-2" id="icons-2"></i> 2340
+              <i class="fa-regular fa-heart icons-2" id="icons-2"></i></i> 26.2k
+              <i class="fa-sharp fa-solid fa-chart-simple icons-2" id="icons-2"></i> 6.6M
+              <i class="fa-solid fa-arrow-up-from-bracket icons-2" id="icons-2"></i>
+
+            </div>
+
           </div>
 
-          <div class="trending_tweets">
-            <p>Entertainment.Trending</p>
-            <h2>#BoycottbollywoodCompletely</h2>
-            <p>24K Tweets</p>
-          </div>
-
-          <div class="trending_tweets">
-            <p>Trending in India</p>
-            <h2>Tata Salt</h2>
-            <p>Trending with #HarSawaalUthega</p>
-          </div>
-
-          <div class="trending_tweets">
-            <p>Entertainment.Trending</p>
-            <h2>#Thalapathy67</h2>
-            <p>62.5K Tweets</p>
-          </div>
-
-          <div class="show_more">
-            <h3>Show more</h3>
+          <div id="more">
+            <i class="fa fa-ellipsis-h" aria-hidden="true"></i>
           </div>
         </div>
+        <!-- /// -->
 
-        <div class="who_to_follow">
-          <div class="people_profile">
-            <img
-              src="images/myphoto.jpg"
-              alt="tusharKumarPhoto"
-              class="my_photo"
-            />
-            <h3>Tushar Kumar</h3>
-            <p>@_prachand_</p>
-            <button>Follow</button>
+        <!-- ///// reply to first tweet-->
+        <div class="tweets">
+          <div>
+            <img src="images/ElonMusk.jpg" class="my_photo" alt="ElonMusk" />
           </div>
-
-          <div class="people_profile">
-            <img
-              src="images/myphoto.jpg"
-              alt="RaviRoushanSinha"
-              class="my_photo"
-            />
-            <h3>Ravi Roushan Sinha</h3>
-            <p>@ravirrs1</p>
-            <button>Follow</button>
+          <div class="tweets_content">
+            <h3>
+              <span>Elon Musk</span>
+              <img src="images/blue-tick.png" class="tweet_img" /> <span class="tweet_id">@elonmusk . Jan 23</span>
+            </h3>
+            <p class="p" style="color:#657786;">Replying to <span class="reply_tweet_id">@JonErlichman</span></p>
+            <p class="p">Good thread</p>
+            <div class="tweet_reply_links">
+              <i class="fa-regular fa-comment icons-2"></i></i> 1,069
+              <i class="fa-solid fa-retweet icons-2" id="icons-2"></i> 1,178
+              <i class="fa-regular fa-heart icons-2" id="icons-2"></i></i> 28.2k
+              <i class="fa-sharp fa-solid fa-chart-simple icons-2" id="icons-2"></i> 5M
+              <i class="fa-solid fa-arrow-up-from-bracket icons-2" id="icons-2"></i>
+            </div>
           </div>
-
-          <div class="people_profile">
-            <img src="images/myphoto.jpg" alt="JSWSteel" class="my_photo" />
-            <h3>JSW Steel</h3>
-            <p>@jswsteel</p>
-            <button>Follow</button>
-          </div>
-
-          <div class="show_more">
-            <h3>Show more</h3>
+          <div id="more">
+            <i class="fa fa-ellipsis-h" aria-hidden="true"></i>
           </div>
         </div>
+        <!-- /// -->
 
-        <div class="bottom_text">
-          <p>Terms of Service Privacy Policy Cookie Policy</p>
+        <!-- ///// second tweet-->
+        <div class="tweets">
+          <div>
+            <img src="images/anandMahindra.jpg" class="my_photo" alt="anandMahindra" />
+          </div>
+          <div class="tweets_content">
+            <h3>
+              <span>anand mahindra</span>
+              <img src="images/blue-tick.png" class="tweet_img" /> <span class="tweet_id">@anandmahindra . 2h</span>
+            </h3>
+            <p class="p1">A flying bike from a Japanese startup. Will cost around $800K in the U.S.
+              I suspect it will be used mainly by police forces around the world; leading to some interesting
+              new chase sequences in movies...</p>
+            <img src="images/flying-bike.png" alt="flying-bike" class="tweet_image">
+            <div class="tweet_reply_links">
+              <i class="fa-regular fa-comment icons-2"></i></i> 196
+              <i class="fa-solid fa-retweet icons-2" id="icons-2"></i> 804
+              <i class="fa-regular fa-heart icons-2" id="icons-2"></i></i> 5699
+              <i class="fa-sharp fa-solid fa-chart-simple icons-2" id="icons-2"></i> 246.7K
+              <i class="fa-solid fa-arrow-up-from-bracket icons-2" id="icons-2"></i>
+            </div>
+          </div>
+          <div id="more">
+            <i class="fa fa-ellipsis-h" aria-hidden="true"></i>
+          </div>
         </div>
+        <!-- /// -->
 
-        <div class="bottom_text">
-          <p>Accessibility Ads info More...</p>
+        <!-- ///// third tweet-->
+        <div class="--replied">
+          <i class="fa-solid fa-comment"></i>
+          <p>You might like . <span style="color:#1da1f2; font-weight: bold;">See more</span></p>
         </div>
-        <div>
-          <p>© 2023 Twitter, Inc.</p>
+        <div class="tweets">
+          <div>
+            <img src="images/vaibhav.jpg" class="my_photo" alt="vaibhav" />
+          </div>
+          <div class="tweets_content">
+            <h3>
+              <span>Vaibhav Matere</span>
+              <img src="images/india-flag.png" class="tweet_img" /> <span class="tweet_id"> @vaibhav_matere . 23h</span>
+            </h3>
+            <p class="p3">Started learning <span style="color:#1da1f2">@figma</span> in detailed today from <span
+                style="color:#1da1f2">FrontendMasters</span> and now it's down!<span style="color:#1da1f2">#figmadown</span>!</p>
+            <div class="tweet_reply_links">
+              <i class="fa-regular fa-comment icons-2"></i></i> 5
+              <i class="fa-solid fa-retweet icons-2" id="icons-2"></i> 1
+              <i class="fa-regular fa-heart icons-2" id="icons-2"></i></i> 24
+              <i class="fa-sharp fa-solid fa-chart-simple icons-2" id="icons-2"></i> 4,441
+              <i class="fa-solid fa-arrow-up-from-bracket icons-2" id="icons-2"></i>
+            </div>
+          </div>
+          <div id="more">
+            <i class="fa fa-ellipsis-h" aria-hidden="true"></i>
+          </div>
         </div>
-      
+        <!-- /// -->
+      </div>
     </div>
-  </body>
+    <div class="sidenavbar_right">
+      <div>
+        <input type="search" name="Search" id="search_bar" placeholder="Search Twitter" />
+      </div>
+      <div class="trending_tweet_title">
+        <h2>What's happening</h2>
+
+        <div class="trending_tweets">
+          <p>Technology.Trending</p>
+          <h2>#MicrosoftTeams</h2>
+          <p>2,990 Tweets</p>
+        </div>
+
+        <div class="trending_tweets">
+          <p>Entertainment.Trending</p>
+          <h2>#PathaanReview</h2>
+          <p>
+            Trending with <a href="">Blockbuster,</a><a href="">#DeepikaPadukone</a>
+          </p>
+        </div>
+
+        <div class="trending_tweets">
+          <p>Entertainment.Trending</p>
+          <h2>#BoycottbollywoodCompletely</h2>
+          <p>24K Tweets</p>
+        </div>
+
+        <div class="trending_tweets">
+          <p>Trending in India</p>
+          <h2>Tata Salt</h2>
+          <p>Trending with #HarSawaalUthega</p>
+        </div>
+
+        <div class="trending_tweets">
+          <p>Entertainment.Trending</p>
+          <h2>#Thalapathy67</h2>
+          <p>62.5K Tweets</p>
+        </div>
+
+        <div class="show_more">
+          <h3>Show more</h3>
+        </div>
+      </div>
+
+      <div class="who_to_follow">
+        <div class="people_profile">
+          <img src="images/myphoto.jpg" alt="tusharKumarPhoto" class="my_photo" />
+          <h3>Tushar Kumar</h3>
+          <p>@_prachand_</p>
+          <button>Follow</button>
+        </div>
+
+        <div class="people_profile">
+          <img src="images/myphoto.jpg" alt="RaviRoushanSinha" class="my_photo" />
+          <h3>Ravi Roushan Sinha</h3>
+          <p>@ravirrs1</p>
+          <button>Follow</button>
+        </div>
+
+        <div class="people_profile">
+          <img src="images/myphoto.jpg" alt="JSWSteel" class="my_photo" />
+          <h3>JSW Steel</h3>
+          <p>@jswsteel</p>
+          <button>Follow</button>
+        </div>
+
+        <div class="show_more">
+          <h3>Show more</h3>
+        </div>
+      </div>
+
+      <div class="bottom_text">
+        <p>Terms of Service Privacy Policy Cookie Policy</p>
+      </div>
+
+      <div class="bottom_text">
+        <p>Accessibility Ads info More...</p>
+      </div>
+      <div>
+        <p>© 2023 Twitter, Inc.</p>
+      </div>
+
+    </div>
+</body>
+
 </html>
