@@ -14,6 +14,12 @@ body {
   border-radius: 50%;
 }
 
+.ndtv_photo{
+width: 53px;
+border-radius: 5px;
+
+}
+
 .sidenavbar_left {
   display: flex;
   flex-direction: column;
@@ -162,6 +168,13 @@ body {
   height: 20rem;
   margin-left: 0.8rem;
 }
+
+.NDTV_image{
+width: 27rem;
+border-radius: 12px;
+margin-left: 0.8rem;
+
+}
 .show_tweets {
   margin: 1rem;
 }
@@ -171,6 +184,7 @@ body {
   font-size: 1rem;
   color: #1da1f2;
   font-weight: 500;
+  
 }
 
 /* .tweets_container {
@@ -182,7 +196,7 @@ body {
 .--replied {
   display: flex;
   align-items: center;
-  margin-left: 2.2rem;
+  margin-left: 3.5rem;
   color: #657786;
 }
 
@@ -200,7 +214,8 @@ body {
 .tweets {
   display: flex;
   align-items: stretch;
-  padding: 1rem;
+  padding: 0 1rem;
+  margin: 1rem;
 }
 
 .tweets_content h3 {
@@ -212,6 +227,7 @@ body {
   display: flex;
   align-items: center;
   letter-spacing: 0.6px;
+  margin: 0;
 }
 
 .tweet_id {
@@ -227,8 +243,20 @@ body {
 .p,
 .p1, .p3 {
   padding-left: 0.8rem;
+  margin: 0.5rem 0;
+ line-height: 1.3rem;
 }
 
 .reply_tweet_id {
   color: #1da1f2;
+}
+
+.pmoModi{
+display: flex;
+align-items: center;
+margin-left: 1rem;
+}
+.flag_img{
+  width: 12px;
+  height: 20px;
 }
