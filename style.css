@@ -51,7 +51,7 @@ border-radius: 5px;
   flex-direction: column;
   align-items: flex-start;
   width: 23rem;
-  background-color: aquamarine;
+ 
 }
 
 .home_btn {
@@ -259,4 +259,66 @@ margin-left: 1rem;
 .flag_img{
   width: 12px;
   height: 20px;
+}
+
+.search_twitter{
+background-color: #F5F8FA;
+display: flex;
+align-items: center;
+gap: 1rem;
+font-family: "Roboto", sans-serif;
+font-size: 0.9rem;
+color: #657786;
+font-weight: 500;
+padding: 0 0 0 .9rem;
+border-radius: 20px;
+width: 20rem;
+margin-left: 1rem;
+}
+
+.trending_tweets_title{
+font-family: 'Public Sans', sans-serif;
+font-size: 0.9rem;
+font-weight: 500;
+padding-left: 1rem;
+
+}
+
+.trending_tweets{
+  background-color: #F5F8FA;
+  padding-left: 1rem;
+  width: 20rem;
+  margin-left: 1rem;
+  margin-top: 1.3rem;
+  border-radius: 15px;
+}
+
+.trending_tweet{
+  font-family: 'Public Sans', sans-serif;
+  padding: 0.8rem;
+  line-height: 21px;
+ 
+}
+
+.trending_tweet p{
+  font-size: 0.8rem;
+  margin: 0;
+}
+
+.trending_tweet h2{
+  font-size: 1rem;
+  margin: 0;
+}
+
+#show_more{
+  font-size: 0.9rem;
+  color: #23addc;
+  padding: 0.8rem;
+  font-weight: 300;
+}
+
+
+
+.who_to_follow{
+  background-color: aqua;
 }
