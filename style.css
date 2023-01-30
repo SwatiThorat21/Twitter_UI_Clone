@@ -25,7 +25,7 @@ border-radius: 5px;
   flex-direction: column;
   align-items: flex-start;
   width: 15rem;
-  /* background-color: blueviolet; */
+ 
 }
 
 .sidenavbar_left_buttons {
@@ -42,8 +42,9 @@ border-radius: 5px;
   flex-direction: column;
   align-items: center;
   width: 45rem;
-  background-color: antiquewhite;
   padding: 1rem;
+  border-right: 0.2px solid rgb(219, 218, 218);
+  border-left: 0.2px solid rgb(219, 218, 218);
 }
 
 .sidenavbar_right {
@@ -88,6 +89,7 @@ border-radius: 5px;
   display: grid;
   grid-template-columns: repeat(4, 38.8%);
   justify-content: center;
+  
 }
 .explore_button {
   font-family: "Roboto", sans-serif;
@@ -97,6 +99,7 @@ border-radius: 5px;
   margin: 0;
   border: none;
   background-color: white;
+  border-bottom: 0.2px solid rgb(219, 218, 218);
 }
 
 .swati_account {
@@ -104,7 +107,6 @@ border-radius: 5px;
   grid-template-columns: 70px 110px auto;
   align-items: center;
   margin-top: 3rem;
-  background-color: bisque;
   padding: 8px 10px;
 }
 
@@ -117,9 +119,10 @@ border-radius: 5px;
 .post_tweet {
   display: flex;
   align-items: center;
-  margin-left: -28rem;
+  margin-left: -25.5rem;
   gap: 1.5rem;
   margin-top: 0.3rem;
+ 
 }
 .whats_happening {
   font-family: "Roboto", sans-serif;
@@ -132,7 +135,7 @@ border-radius: 5px;
   display: flex;
   align-items: center;
   gap: 1rem;
-  margin-left: 4rem;
+  margin-left: 6rem;
   margin-top: 1rem;
 }
 .tweet_button2 {
@@ -177,6 +180,10 @@ margin-left: 0.8rem;
 }
 .show_tweets {
   margin: 1rem;
+  border-bottom: 0.2px solid rgb(219, 218, 218);
+  border-top: 0.2px solid rgb(219, 218, 218);
+  width: 47rem;
+  text-align: center;
 }
 
 .show_tweets h3 {
@@ -216,6 +223,8 @@ margin-left: 0.8rem;
   align-items: stretch;
   padding: 0 1rem;
   margin: 1rem;
+  border-bottom: 0.2px solid rgb(219, 218, 218);
+  width: 45rem;
 }
 
 .tweets_content h3 {
@@ -278,7 +287,7 @@ margin-left: 1rem;
 
 .trending_tweets_title{
 font-family: 'Public Sans', sans-serif;
-font-size: 0.9rem;
+font-size: 0.8rem;
 font-weight: 500;
 padding-left: 1rem;
 
@@ -300,25 +309,60 @@ padding-left: 1rem;
  
 }
 
-.trending_tweet p{
+.trending_tweet p, .people_info p{
   font-size: 0.8rem;
   margin: 0;
+  color: #657786;
 }
 
-.trending_tweet h2{
-  font-size: 1rem;
-  margin: 0;
-}
-
-#show_more{
+.trending_tweet h2, .people_info h3{
   font-size: 0.9rem;
+  margin: 0;
+ 
+}
+
+.show_more{
+  font-size: 1rem;
   color: #23addc;
   padding: 0.8rem;
   font-weight: 300;
 }
 
-
-
 .who_to_follow{
-  background-color: aqua;
+  background-color: #F5F8FA;
+  padding-left: 1rem;
+  width: 20rem;
+  margin-left: 1rem;
+  margin-top: 1.3rem;
+  border-radius: 15px;
+}
+
+.people_profile{
+display: flex;
+align-items: center;
+gap: 1rem;
+margin: 1.5rem;
+
+}
+
+.bottom_text{
+  margin-left: 3rem;
+  line-height: 0;
+  font-size: 0.8rem;
+  color: #657786;
+  display: flex;
+  gap: 0.7rem;
+}
+
+.people_info h3, .people_info p {
+  margin: 0;
+}
+
+.follow_btn {
+  color: white;
+  background-color: black;
+  padding: 0.4rem 0.9rem;
+  border-radius: 22px;
+  font-weight: 700;
+  
 }
