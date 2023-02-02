@@ -1,11 +1,18 @@
+*{
+   box-sizing: border-box;
+}
+
 body {
   background-color: white;
+  overflow: hidden;
+  height: 100vh;
 }
 
 .container {
   display: flex;
   font-family: "Roboto", sans-serif;
   justify-content: center;
+  height: 100%;
 }
 
 .my_photo {
@@ -26,7 +33,7 @@ border-radius: 5px;
   flex-direction: column;
   align-items: flex-start;
   width: 15rem;
- 
+   
 }
 
 .sidenavbar_left_buttons {
@@ -52,8 +59,9 @@ background-color: #E1E8ED;
   align-items: center;
   width: 45rem;
   padding: 1rem;
-  border-right: 0.2px solid rgb(219, 218, 218);
-  border-left: 0.2px solid rgb(219, 218, 218);
+  border-right: 0.2px solid rgb(219, 218, 218,0.5);
+  border-left: 0.2px solid rgb(219, 218, 218, 0.5);
+  overflow-x: hidden;
 }
 
 .sidenavbar_right {
@@ -105,7 +113,7 @@ background-color: rgb(232, 241, 254);
   border-radius: 4px;
 }
 .h3_home {
-  margin-left: -41rem;
+  margin-left: -39rem;
   margin-top: 0;
 }
 .explore_tweets_buttons {
@@ -122,7 +130,7 @@ background-color: rgb(232, 241, 254);
   margin: 0;
   border: none;
   background-color: white;
-  border-bottom: 0.2px solid rgb(219, 218, 218);
+  border-bottom: 0.2px solid rgb(219, 218, 218,0.5);
   cursor: pointer;
 }
 
@@ -171,7 +179,7 @@ background-color: rgb(232, 241, 254);
   display: flex;
   align-items: center;
   /* gap: 1rem; */
-  margin-left: 6rem;
+  margin-left: 4rem;
   margin-top: 1rem;
 }
 .tweet_button2 {
@@ -185,7 +193,7 @@ background-color: rgb(232, 241, 254);
   color: white;
   font-weight: 600;
   letter-spacing: 0.7px;
-  margin-left: 22rem;
+  margin-left: 20rem;
 }
 
 .icons-1 {
@@ -223,8 +231,8 @@ margin-left: 0.8rem;
 }
 .show_tweets {
   margin: 1rem;
-  border-bottom: 0.2px solid rgb(219, 218, 218);
-  border-top: 0.2px solid rgb(219, 218, 218);
+  border-bottom: 0.2px solid rgb(219, 218, 218, 0.5);
+  border-top: 0.2px solid rgb(219, 218, 218, 0.5);
   width: 47rem;
   text-align: center;
   cursor: pointer;
@@ -269,9 +277,9 @@ margin-left: 0.8rem;
 .tweets {
   display: flex;
   align-items: stretch;
-  padding: 0.5rem 1rem;
+  padding: 0.5rem 2rem;
   /* margin: 1rem; */
-  border-bottom: 0.2px solid rgb(219, 218, 218);
+  border-bottom: 0.2px solid rgb(219, 218, 218, 0.5);
   width: 45rem;
   cursor: pointer;
 }
