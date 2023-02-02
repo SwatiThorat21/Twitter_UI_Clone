@@ -414,28 +414,40 @@ margin-left: 2rem;
 
 .who_to_follow{
   background-color: #F5F8FA;
-  padding-left: 1rem;
+  /* padding-left: 1rem; */
   width: 20rem;
   margin-left: 2rem;
   margin-top: 1.3rem;
   border-radius: 15px;
 }
 
+#tushar_profile{
+margin-top: 0;
+
+}
 .people_profile{
 display: flex;
 align-items: center;
 gap: 1rem;
-margin: 1.5rem;
-
+padding: 1rem;
+cursor: pointer;
 }
 
-.bottom_text{
+.people_profile:hover{
+  background-color: #E1E8ED;
+}
+.bottom_text, .twitter_rights{
   margin-left: 3rem;
   line-height: 0;
   font-size: 0.8rem;
   color: #657786;
   display: flex;
   gap: 0.7rem;
+}
+
+.bottom_text p:hover{
+/* border-bottom: 0.5px solid black; */
+cursor: pointer;
 }
 
 .people_info h3, .people_info p {
