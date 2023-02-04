@@ -32,6 +32,9 @@ body {
   flex-direction: column;
   align-items: flex-start;
   width: 15rem;
+  height: fit-content;
+  position: sticky;
+  top: 0;
 }
 
 .sidenavbar_left_buttons {
@@ -66,6 +69,9 @@ body {
   flex-direction: column;
   align-items: flex-start;
   width: 23rem;
+  height: fit-content;
+  position: sticky;
+  top: 0;
 }
 
 .home_btn {
@@ -107,13 +113,29 @@ body {
   border-bottom: 4.4px solid #1da1f2;
   /* border-radius: 4px; */
 }
-.h3_home {
-  margin-left: -39rem;
+
+#home_page_sticky {
+  width: 45rem;
+  /* padding: 2px; */
+  position: sticky;
+  top: 0;
+  background-color: rgba(255, 255, 255, 0.85);
+  backdrop-filter: blur(12px);
+  border-right: 0.2px solid rgb(219, 218, 218, 0.5);
+  border-left: 0.2px solid rgb(219, 218, 218, 0.5);
+}
+.title_home {
   margin-top: 0;
+  font-size: 1.5rem;
+  padding-left: 1rem;
+}
+
+#home_page_moving {
+  width: 45rem;
 }
 .explore_tweets_buttons {
   display: grid;
-  grid-template-columns: repeat(4, 37%);
+  grid-template-columns: repeat(4, 25%);
   justify-content: center;
 }
 .explore_button {
@@ -155,9 +177,9 @@ body {
 .post_tweet {
   display: flex;
   align-items: center;
-  margin-left: -25.5rem;
   gap: 1.5rem;
   margin-top: 0.3rem;
+  padding: 1rem;
 }
 .whats_happening {
   font-family: "Roboto", sans-serif;
@@ -169,14 +191,13 @@ body {
 .links_tweet {
   display: flex;
   align-items: center;
-  /* gap: 1rem; */
-  margin-left: 4rem;
-  margin-top: 1rem;
+  gap: 17rem;
+  justify-content: center;
 }
 .tweet_button2 {
   font-family: "Roboto", sans-serif;
   font-size: 0.9rem;
-  width: 80%;
+  width: 100%;
   background-color: #1da1f28f;
   padding: 7px 15px;
   border: none;
@@ -184,7 +205,6 @@ body {
   color: white;
   font-weight: 600;
   letter-spacing: 0.7px;
-  margin-left: 20rem;
 }
 
 .icons-1 {
@@ -220,7 +240,6 @@ body {
   margin-left: 0.8rem;
 }
 .show_tweets {
-  margin: 1rem;
   border-bottom: 0.2px solid rgb(219, 218, 218, 0.5);
   border-top: 0.2px solid rgb(219, 218, 218, 0.5);
   width: 45rem;
@@ -340,8 +359,10 @@ body {
   font-weight: 500;
   padding: 0 0 0 0.9rem;
   border-radius: 20px;
-  width: 20rem;
+  width: 21rem;
   margin-left: 2rem;
+  position: fixed;
+  top: 0;
 }
 
 .trending_tweets_title {
@@ -360,7 +381,7 @@ body {
   /* padding-left: 1rem; */
   width: 21rem;
   margin-left: 2rem;
-  margin-top: 1.3rem;
+  margin-top: 3.5rem;
   border-radius: 20px;
 }
 
@@ -459,15 +480,15 @@ body {
 }
 
 #footer {
-   display: none;
+  display: none;
 }
 
-@media only screen and (max-width:999px){
-  .sidenavbar_left{
+@media only screen and (max-width: 999px) {
+  .sidenavbar_left {
     display: none;
   }
 
-  .sidenavbar_right{
+  .sidenavbar_right {
     display: none;
   }
 
@@ -479,7 +500,7 @@ body {
     left: 22.8rem;
     bottom: 0;
     width: 45rem;
-    background-color:white;
+    background-color: white;
   }
 
   .home_page {
@@ -494,13 +515,13 @@ body {
   .h3_home {
     margin-left: -28rem;
   }
-  .post_tweet{
+  .post_tweet {
     margin-left: -18.5rem;
   }
-  .show_tweets{
+  .show_tweets {
     width: 40rem;
   }
-  .tweets{
+  .tweets {
     width: 39rem;
   }
   .tweet_image {
@@ -509,19 +530,16 @@ body {
     height: 15rem;
     margin-left: 0.8rem;
   }
-  .tweet_button2{
+  .tweet_button2 {
     margin-left: 14rem;
   }
-
 }
 
-
-
-@media only screen and (max-width:450px){
-  .sidenavbar_left{
+@media only screen and (max-width: 450px) {
+  .sidenavbar_left {
     display: none;
   }
-  .sidenavbar_right{
+  .sidenavbar_right {
     display: none;
   }
   #footer {
@@ -532,26 +550,26 @@ body {
     left: 22.8rem;
     bottom: 0;
     width: 45rem;
-    background-color:white;
+    background-color: white;
   }
-   .explore_tweets_buttons {
+  .explore_tweets_buttons {
     display: grid;
     grid-template-columns: repeat(4, 24%);
     justify-content: center;
   }
-  .explore_button{
+  .explore_button {
     font-size: 0.6rem;
   }
   .h3_home {
     margin-left: -18rem;
   }
-  .post_tweet{
+  .post_tweet {
     margin-left: -4.5rem;
   }
-  .tweets{
+  .tweets {
     width: 25rem;
- }
-  .tweets_content{
+  }
+  .tweets_content {
     font-size: 0.7rem;
   }
   .tweet_image {
@@ -560,23 +578,22 @@ body {
     height: 10rem;
     margin-left: 0.8rem;
   }
-  .tweet_button2{
+  .tweet_button2 {
     margin-left: 14rem;
   }
-  .p{
+  .p {
     line-height: 1.8rem;
   }
-  .show_tweets h3{
+  .show_tweets h3 {
     font-size: 0.8rem;
   }
-  .show_tweets{
+  .show_tweets {
     width: 40rem;
   }
-  .link_tweet{
+  .link_tweet {
     margin-left: 12rem;
   }
   .tweet_button2 {
     margin-left: 8rem;
   }
-
 }
