@@ -91,7 +91,7 @@ body {
 .tweet_button {
   font-family: "Public Sans", sans-serif;
   font-size: 1.1rem;
-  width: 80%;
+  width: 85%;
   background-color: #1da1f2;
   padding: 13px 10px;
   border: none;
@@ -99,6 +99,9 @@ body {
   color: white;
   margin-top: 10px;
   cursor: pointer;
+}
+.tweet_button:hover{
+  background-color: #0f83cb;
 }
 
 .left_btn {
@@ -153,10 +156,10 @@ body {
 }
 .swati_account {
   display: grid;
-  grid-template-columns: 61px 137px auto;
+  grid-template-columns: 55px 137px auto;
   align-items: center;
-  margin-top: 3rem;
-  padding: 0 10px 0 8px;
+  margin-top: 7.5rem;
+  padding: 0 13px 0 10px;
   border-radius: 2rem;
   cursor: pointer;
 }
@@ -169,9 +172,14 @@ body {
   font-size: 0.9rem;
   font-family: "Public Sans", sans-serif;
   font-weight: 500;
-  line-height: 20px;
+  line-height: 18px;
 }
-
+.swati_photo{
+  width: 43px;
+  height: 43px;
+  border-radius: 50%;
+  cursor: pointer;
+}
 .post_tweet {
   display: flex;
   align-items: center;
@@ -190,22 +198,36 @@ body {
 .links_tweet {
   display: flex;
   align-items: center;
-  gap: 15rem;
+  gap: 14rem;
   justify-content: center;
   margin-bottom: 1rem;
-  margin-left: 4rem;
+  margin-left: 5.5rem;
   width: fit-content;
   block-size: fit-content;
 }
 .link_buttons {
   display: flex;
-  gap: 15px;
+  gap: 2px;
 }
 
 .link_btn {
   width: 20px;
   height: 20px;
   fill: rgb(29, 155, 240);
+  padding: 6px;
+  border-radius: 15px;
+  cursor: pointer;
+}
+
+.link_location{
+  width: 20px;
+  height: 20px;
+  fill: rgb(134, 199, 241);
+  padding: 6px;
+}
+
+.link_btn:hover {
+  background-color: rgb(232, 241, 254);
 }
 
 .tweet_button2 {
@@ -213,7 +235,7 @@ body {
   font-size: 0.9rem;
   /* width: 100%; */
   background-color: #1da1f28f;
-  padding: 11px 24px;
+  padding: 10px 20px;
   border: none;
   border-radius: 30px;
   color: white;
@@ -348,7 +370,7 @@ body {
   block-size: fit-content;
 }
 
-.tweets:hover {
+.tweet:hover {
   background-color: #f5f8fa;
 }
 
@@ -548,6 +570,10 @@ body {
   padding: 0.4rem 0.9rem;
   border-radius: 22px;
   font-weight: 700;
+  cursor: pointer;
+}
+.follow_btn:hover{
+  background-color: rgb(39, 38, 38);
 }
 
 #footer {
