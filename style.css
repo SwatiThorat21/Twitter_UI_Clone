@@ -220,6 +220,10 @@ body {
   font-weight: 600;
   letter-spacing: 0.7px;
 }
+.tweet_reply_links{
+  display: flex;
+  gap: 1.75rem;
+}
 
 .icons-1 {
   color: #1da1f2;
@@ -233,12 +237,48 @@ body {
 }
 
 .icons-2 {
-  color: #657786;
+  color: rgb(83, 100, 113);
   margin-left: 0.8rem;
+  padding: 8px;
+  border-radius: 15px;
+  cursor: pointer; 
+
 }
 
-#icons-2 {
-  padding: 1.4rem;
+#icon-1:hover, #icon-5:hover {
+  color:#1da1f2;
+  background-color: rgb(232, 241, 254);
+}
+#comment_icon:hover, #share_icon:hover{
+  color: #1da1f2;
+}
+
+#comment_icon, #retweet_icon, #like_icon, #views_icon {
+  font-size: 15px;
+}
+
+#icon-2:hover {
+  color:rgba(16, 195, 156, 0.936);
+  background-color: rgb(238, 248, 225);
+}
+#retweet_icon:hover{
+  color: rgba(16, 195, 156, 0.936);
+}
+
+#icon-3:hover {
+  color:rgb(239, 107, 224);
+  background-color: rgb(240, 213, 237);
+}
+#like_icon:hover{
+  color: rgb(239, 107, 224);
+}
+
+#icon-4:hover {
+  color:rgb(74, 140, 238);
+  background-color: rgb(207, 222, 244);
+}
+#views_icon:hover{
+  color: rgb(74, 140, 238);
 }
 
 .tweet_image {
