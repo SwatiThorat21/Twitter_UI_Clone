@@ -1,16 +1,13 @@
-* {
-  box-sizing: border-box;
-}
-
 body {
   background-color: white;
-  /* overflow: hidden; */
-  /* height: 100vh; */
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 .container {
   display: flex;
-  font-family: "Roboto", sans-serif;
+  font-family: "Public Sans", sans-serif;
   justify-content: center;
   height: 100%;
 }
@@ -38,7 +35,7 @@ body {
 }
 
 .sidenavbar_left_buttons {
-  font-family: "Roboto", sans-serif;
+  font-family: "Public Sans", sans-serif;
   font-size: 1.2rem;
   letter-spacing: 0.5px;
   padding: 0.9rem;
@@ -57,8 +54,8 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: 45rem;
-  padding: 1rem;
+  width: 40rem;
+  padding-top: 1rem;
   border-right: 0.2px solid rgb(219, 218, 218, 0.5);
   border-left: 0.2px solid rgb(219, 218, 218, 0.5);
   /* overflow-x: hidden; */
@@ -92,7 +89,7 @@ body {
   background-color: rgb(232, 241, 254);
 }
 .tweet_button {
-  font-family: "Roboto", sans-serif;
+  font-family: "Public Sans", sans-serif;
   font-size: 1.1rem;
   width: 80%;
   background-color: #1da1f2;
@@ -115,23 +112,23 @@ body {
 }
 
 #home_page_sticky {
-  width: 45rem;
+  width: 40rem;
   /* padding: 2px; */
   position: sticky;
   top: 0;
   background-color: rgba(255, 255, 255, 0.85);
   backdrop-filter: blur(12px);
-  border-right: 0.2px solid rgb(219, 218, 218, 0.5);
-  border-left: 0.2px solid rgb(219, 218, 218, 0.5);
+ 
 }
+
 .title_home {
   margin-top: 0;
-  font-size: 1.5rem;
+  font-size: 1.3rem;
   padding-left: 1rem;
 }
 
 #home_page_moving {
-  width: 45rem;
+  width: 40rem;
 }
 .explore_tweets_buttons {
   display: grid;
@@ -139,13 +136,14 @@ body {
   justify-content: center;
 }
 .explore_button {
-  font-family: "Roboto", sans-serif;
+  font-family: "Public Sans", sans-serif;
   font-size: 1rem;
-  color: #657786;
+  color: #576774;
   padding: 18px 30px;
   margin: 0;
   border: none;
   background-color: white;
+  backdrop-filter: blur(12px);
   border-bottom: 0.2px solid rgb(219, 218, 218, 0.5);
   cursor: pointer;
 }
@@ -179,27 +177,43 @@ body {
   align-items: center;
   gap: 1.5rem;
   margin-top: 0.3rem;
-  padding: 1rem;
+  padding: 0 1rem 1rem 1rem;
 }
 .whats_happening {
-  font-family: "Roboto", sans-serif;
+  font-family: "Public Sans", sans-serif;
   font-size: 1.32rem;
   font-weight: 500;
-  color: #657786;
+  color: #576774;
+  letter-spacing: 0.7px;
 }
 
 .links_tweet {
   display: flex;
   align-items: center;
-  gap: 17rem;
+  gap: 15rem;
   justify-content: center;
+  margin-bottom: 1rem;
+  margin-left: 4rem;
+  width: fit-content;
+  block-size: fit-content;
 }
+.link_buttons {
+  display: flex;
+  gap: 15px;
+}
+
+.link_btn {
+  width: 20px;
+  height: 20px;
+  fill: rgb(29, 155, 240);
+}
+
 .tweet_button2 {
-  font-family: "Roboto", sans-serif;
+  font-family: "Public Sans", sans-serif;
   font-size: 0.9rem;
-  width: 100%;
+  /* width: 100%; */
   background-color: #1da1f28f;
-  padding: 7px 15px;
+  padding: 11px 24px;
   border: none;
   border-radius: 30px;
   color: white;
@@ -229,7 +243,7 @@ body {
 
 .tweet_image {
   border-radius: 12px;
-  width: 35rem;
+  width: 32rem;
   height: 20rem;
   margin-left: 0.8rem;
 }
@@ -242,7 +256,7 @@ body {
 .show_tweets {
   border-bottom: 0.2px solid rgb(219, 218, 218, 0.5);
   border-top: 0.2px solid rgb(219, 218, 218, 0.5);
-  width: 45rem;
+  width: 40rem;
   text-align: center;
   cursor: pointer;
 }
@@ -252,7 +266,7 @@ body {
 }
 
 .show_tweets h3 {
-  font-family: "Roboto", sans-serif;
+  font-family: "Public Sans", sans-serif;
   font-size: 1rem;
   color: #1da1f2;
   font-weight: 500;
@@ -260,10 +274,11 @@ body {
 
 /* .tweets_container {
   
-}
-#more{
+}*/
 
-} */
+#more {
+  margin-right: 10px;
+}
 .--replied {
   display: flex;
   align-items: center;
@@ -272,7 +287,7 @@ body {
 }
 
 .--replied p {
-  font-family: "Roboto", sans-serif;
+  font-family: "Public Sans", sans-serif;
   font-size: 0.9rem;
   font-weight: 600;
   margin-left: 0.8rem;
@@ -282,29 +297,30 @@ body {
   width: 20px;
 }
 
-.tweets {
+.tweet {
   display: flex;
-  align-items: stretch;
-  padding: 0.5rem 2rem;
+  padding: 0.5rem 0 0.5rem 1.3rem;
   /* margin: 1rem; */
   border-bottom: 0.2px solid rgb(219, 218, 218, 0.5);
-  width: 45rem;
+  width: 40rem;
   cursor: pointer;
+  width: fit-content;
+  block-size: fit-content;
 }
 
 .tweets:hover {
   background-color: #f5f8fa;
 }
 
-.tweets_content h3 {
+.tweet_content h3 {
   padding-top: 0;
   margin-top: 0.5rem;
-  font-family: "Roboto", sans-serif;
+  font-family: "Public Sans", sans-serif;
   font-size: 1rem;
   padding-left: 0.8rem;
   display: flex;
   align-items: center;
-  letter-spacing: 0.6px;
+  /* letter-spacing: 0.6px; */
   margin: 0;
   cursor: pointer;
 }
@@ -313,25 +329,40 @@ body {
   border-bottom: 0.5px solid black;
 }
 
-.tweets_content h3:hover {
-  text-underline-offset: ;
-}
+/* .tweets_content h3:hover {
+  /* border-bottom: 0.5px solid black; 
+} */
 .tweet_id {
   color: #657786;
   font-size: 0.9rem;
   font-weight: 500;
 }
 
-.p::after {
+.p-1::after {
   content: "\a";
   white-space: pre;
 }
-.p,
+.p {
+  /* padding-left: 0.8rem; */
+  margin: 0.5rem 0;
+  line-height: 2.5rem;
+  margin-top: 0;
+  color: rgba(0, 0, 0, 0.83);
+}
+
+.p-1 {
+  padding-left: 0.8rem;
+  margin: 0.5rem 0;
+  margin-top: 0;
+  color: rgba(0, 0, 0, 0.85);
+  line-height: 1.5rem;
+}
+
 .p1,
 .p3 {
   padding-left: 0.8rem;
   margin: 0.5rem 0;
-  line-height: 3rem;
+  /* line-height: 2.5rem; */
 }
 
 .reply_tweet_id {
@@ -348,21 +379,21 @@ body {
   height: 20px;
 }
 
-.search_twitter {
-  background-color: #f5f8fa;
+.search_bar {
+  background-color: rgb(239, 243, 244);
   display: flex;
   align-items: center;
   gap: 1rem;
-  font-family: "Roboto", sans-serif;
+  font-family: "Public Sans", sans-serif;
   font-size: 0.9rem;
   color: #657786;
   font-weight: 500;
   padding: 0 0 0 0.9rem;
   border-radius: 20px;
-  width: 21rem;
+  width: 20rem;
   margin-left: 2rem;
   position: fixed;
-  top: 0;
+  margin-top: 5px;
 }
 
 .trending_tweets_title {
@@ -381,7 +412,7 @@ body {
   /* padding-left: 1rem; */
   width: 21rem;
   margin-left: 2rem;
-  margin-top: 3.5rem;
+  margin-top: 4rem;
   border-radius: 20px;
 }
 
@@ -431,7 +462,7 @@ body {
 .who_to_follow {
   background-color: #f5f8fa;
   /* padding-left: 1rem; */
-  width: 20rem;
+  width: 21rem;
   margin-left: 2rem;
   margin-top: 1.3rem;
   border-radius: 15px;
@@ -484,116 +515,7 @@ body {
 }
 
 @media only screen and (max-width: 999px) {
-  .sidenavbar_left {
-    display: none;
-  }
-
-  .sidenavbar_right {
-    display: none;
-  }
-
-  #footer {
-    display: block;
-    display: flex;
-    justify-content: space-around;
-    position: fixed;
-    left: 22.8rem;
-    bottom: 0;
-    width: 45rem;
-    background-color: white;
-  }
-
-  .home_page {
-    width: 40rem;
-    padding: 5rem;
-  }
-  .explore_tweets_buttons {
-    display: grid;
-    grid-template-columns: repeat(4, 25%);
-    justify-content: center;
-  }
-  .h3_home {
-    margin-left: -28rem;
-  }
-  .post_tweet {
-    margin-left: -18.5rem;
-  }
-  .show_tweets {
-    width: 40rem;
-  }
-  .tweets {
-    width: 39rem;
-  }
-  .tweet_image {
-    border-radius: 12px;
-    width: 30rem;
-    height: 15rem;
-    margin-left: 0.8rem;
-  }
-  .tweet_button2 {
-    margin-left: 14rem;
-  }
 }
 
 @media only screen and (max-width: 450px) {
-  .sidenavbar_left {
-    display: none;
-  }
-  .sidenavbar_right {
-    display: none;
-  }
-  #footer {
-    display: block;
-    display: flex;
-    justify-content: space-around;
-    position: fixed;
-    left: 22.8rem;
-    bottom: 0;
-    width: 45rem;
-    background-color: white;
-  }
-  .explore_tweets_buttons {
-    display: grid;
-    grid-template-columns: repeat(4, 24%);
-    justify-content: center;
-  }
-  .explore_button {
-    font-size: 0.6rem;
-  }
-  .h3_home {
-    margin-left: -18rem;
-  }
-  .post_tweet {
-    margin-left: -4.5rem;
-  }
-  .tweets {
-    width: 25rem;
-  }
-  .tweets_content {
-    font-size: 0.7rem;
-  }
-  .tweet_image {
-    border-radius: 12px;
-    width: 20rem;
-    height: 10rem;
-    margin-left: 0.8rem;
-  }
-  .tweet_button2 {
-    margin-left: 14rem;
-  }
-  .p {
-    line-height: 1.8rem;
-  }
-  .show_tweets h3 {
-    font-size: 0.8rem;
-  }
-  .show_tweets {
-    width: 40rem;
-  }
-  .link_tweet {
-    margin-left: 12rem;
-  }
-  .tweet_button2 {
-    margin-left: 8rem;
-  }
 }
