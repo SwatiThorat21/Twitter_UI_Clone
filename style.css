@@ -355,7 +355,7 @@ body {
   margin-left: 0.8rem;
 }
 
-.tweet_img {
+.tweetContent_icon {
   width: 20px;
 }
 
@@ -426,6 +426,11 @@ body {
   padding-left: 0.8rem;
   margin: 0.5rem 0;
   /* line-height: 2.5rem; */
+}
+
+.hashtag_link:hover{
+border-bottom: 0.5px solid #23addc;
+cursor: pointer;
 }
 
 .reply_tweet_id {
