@@ -7,7 +7,11 @@ function fetchTweets() {
     })
     .then((data) => {
       let tweets_Container = document.getElementById("tweets_container");
+      let trending_tweets = document.getElementById("trending_tweets");
+      let peopleYouMayKnow = document.getElementById("peopleYouMayKnow");
       let tweetsHTML = "";
+      let trendingTweetsHTML = "";
+      let peoplesProfile = "";
 
       data.tweets.forEach((tweet) => {
         let tweetHTML = `<div class="tweet">`;
@@ -62,9 +66,39 @@ function fetchTweets() {
         tweetHTML += `</div>`;
 
         tweetsHTML += tweetHTML;
-        
+
       });
       tweets_Container.insertAdjacentHTML("beforeend", tweetsHTML);
+
+      data.trending.forEach((trend)=>{
+        console.log(trend);
+        trendingTweetsHTML += `
+            <div class="trendingTweet">
+            <p>${trend.trendingIn}<i class="fa fa-ellipsis-h" aria-hidden="true" style="margin-left: 9rem;"></i></p>
+            <h2>${trend.hashTag}</h2>
+            <p>${trend.trendingWith}</p>
+            </div>
+        `
+      })
+      trending_tweets.insertAdjacentHTML("beforeend", trendingTweetsHTML);
+
+      data.whoToFollow.forEach((people)=>{
+        peoplesProfile += `
+        <div class="people_profile">
+              <div>
+                <img src="${people.profile-image}" alt="tusharKumarPhoto" class="my_photo" />
+              </div>
+              <div class="people_info">
+                <h3>Tushar Kumar</h3>
+                <p>@_prachand_</p>
+              </div>
+              <div>
+                <button class="follow_btn" style="margin-left: 2.1rem;">Follow</button>
+              </div>
+            </div>
+        `
+      })
+      peopleYouMayKnow.insertAdjacentHTML("beforeend", peoplesProfile);
     });
 }
 

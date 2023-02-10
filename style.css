@@ -477,7 +477,7 @@ cursor: pointer;
 }
 
 .trending_tweets_title {
-  padding: 0.5rem 1rem 0.8rem 0.8rem;
+  padding: 1rem 0 0.5rem 1rem;
 }
 
 .trending_tweets_title h2 {
@@ -487,7 +487,7 @@ cursor: pointer;
   /* font-weight: bold; */
 }
 
-.trending_tweets {
+.trending_tweets_container {
   background-color: #f5f8fa;
   /* padding-left: 1rem; */
   width: 21rem;
@@ -496,25 +496,29 @@ cursor: pointer;
   border-radius: 20px;
 }
 
-.trending_tweet {
+.trending_tweets {
   font-family: "Public Sans", sans-serif;
-  padding: 0.8rem 0 0.8rem 1rem;
   line-height: 21px;
   cursor: pointer;
 }
 
-.trending_tweet:hover {
+.trendingTweet{
+  padding: 0.8rem 0 0.8rem 1rem;
+
+}
+
+.trendingTweet:hover {
   background-color: #e1e8ed;
 }
 
-.trending_tweet p,
+.trending_tweets p,
 .people_info p {
   font-size: 0.8rem;
   margin: 0;
   color: #657786;
 }
 
-.trending_tweet h2,
+.trending_tweets h2,
 .people_info h3 {
   font-size: 0.9rem;
   margin: 0;

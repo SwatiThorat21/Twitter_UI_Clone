@@ -119,19 +119,19 @@
 
   "whoToFollow":[
     {
-        "profile-image":"images/tushar.jpg",
-        "profile-name":"Tushar Kumar",
-        "profile-id": "@_prachand_"
+        "profile_image":"images/tushar.jpg",
+        "profile_name":"Tushar Kumar",
+        "profile_id": "@_prachand_"
     },
     {
-        "profile-image":"images/ravi.jpg",
-        "profile-name":"Ravi Roushan Sinha",
-        "profile-id": "@ravirrs1"
+        "profile_image":"images/ravi.jpg",
+        "profile_name":"Ravi Roushan Sinha",
+        "profile_id": "@ravirrs1"
     },
     {
-        "profile-image":"images/jsw.jpg",
-        "profile-name":"JSW Steel",
-        "profile-id": "@jswsteel"
+        "profile_image":"images/jsw.jpg",
+        "profile_name":"JSW Steel",
+        "profile_id": "@jswsteel"
     }
   ]
 }
