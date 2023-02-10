@@ -246,7 +246,8 @@ body {
   display: flex;
   gap: 1.75rem;
   align-items: center;
-  justify-content: center;
+  justify-content: flex-start;
+  padding-left: 2.5rem;
 }
 
 .icons-1 {
@@ -308,7 +309,7 @@ body {
 .tweet_image {
   border-radius: 12px;
   width: 32rem;
-  height: 20rem;
+  height: 22rem;
   margin-left: 3.8rem;
 }
 
@@ -364,7 +365,7 @@ body {
 .tweet {
   display: flex;
   flex-direction: column;
-  padding: 0.5rem 0 0.5rem 1.3rem;
+  padding: 0.5rem 0.6rem 0.5rem 1.3rem;
   /* margin: 1rem; */
   border-bottom: 0.2px solid rgb(219, 218, 218, 0.5);
   width: 40rem;
