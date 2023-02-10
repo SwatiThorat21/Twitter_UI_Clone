@@ -71,7 +71,6 @@ function fetchTweets() {
       tweets_Container.insertAdjacentHTML("beforeend", tweetsHTML);
 
       data.trending.forEach((trend)=>{
-        console.log(trend);
         trendingTweetsHTML += `
             <div class="trendingTweet">
             <p>${trend.trendingIn}<i class="fa fa-ellipsis-h" aria-hidden="true" style="margin-left: 9rem;"></i></p>
@@ -83,14 +82,14 @@ function fetchTweets() {
       trending_tweets.insertAdjacentHTML("beforeend", trendingTweetsHTML);
 
       data.whoToFollow.forEach((people)=>{
-        peoplesProfile += `
+       peoplesProfile += `
         <div class="people_profile">
               <div>
-                <img src="${people.profile-image}" alt="tusharKumarPhoto" class="my_photo" />
+                <img src="${people.profile_image}" alt="tusharKumarPhoto" class="my_photo" />
               </div>
               <div class="people_info">
-                <h3>Tushar Kumar</h3>
-                <p>@_prachand_</p>
+                <h3>${people.profile_name}</h3>
+                <p>${people.profile_id}</p>
               </div>
               <div>
                 <button class="follow_btn" style="margin-left: 2.1rem;">Follow</button>
