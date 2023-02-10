@@ -6,7 +6,6 @@ function fetchTweets() {
       return res.json();
     })
     .then((data) => {
-
       let tweets_Container = document.getElementById("tweets_container");
       let tweetsHTML = "";
 
@@ -60,10 +59,10 @@ function fetchTweets() {
           </div>
           `;
         }
-
-        tweetHTML += `</div>`
+        tweetHTML += `</div>`;
 
         tweetsHTML += tweetHTML;
+        
       });
       tweets_Container.insertAdjacentHTML("beforeend", tweetsHTML);
     });

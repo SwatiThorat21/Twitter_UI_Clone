@@ -414,10 +414,10 @@ body {
   font-weight: 500;
 }
 
-.p-1::after {
+/* .p-1::after {
   content: "\a";
   white-space: pre;
-}
+} */
 .p {
   margin: 0 0 0.5rem 3.8rem;
   line-height: 2.5rem;
