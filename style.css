@@ -245,6 +245,8 @@ body {
 .tweet_reply_links{
   display: flex;
   gap: 1.75rem;
+  align-items: center;
+  justify-content: center;
 }
 
 .icons-1 {
@@ -307,7 +309,7 @@ body {
   border-radius: 12px;
   width: 32rem;
   height: 20rem;
-  margin-left: 0.8rem;
+  margin-left: 3.8rem;
 }
 
 .NDTV_image {
@@ -382,8 +384,10 @@ body {
 
 #tweet_profile{
   display: flex;
+  max-height:2rem;
 }
 .tweet_content h3 {
+  flex-grow: 1;
   padding-top: 0;
   margin-top: 0.5rem;
   font-family: "Public Sans", sans-serif;
@@ -415,7 +419,7 @@ body {
   white-space: pre;
 }
 .p {
-  margin: 0 0 0.5rem 3.7rem;
+  margin: 0 0 0.5rem 3.8rem;
   line-height: 2.5rem;
   color: rgba(0, 0, 0, 0.83);
 }
