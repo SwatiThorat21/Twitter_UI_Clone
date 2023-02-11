@@ -84,17 +84,13 @@ function fetchTweets() {
       data.whoToFollow.forEach((people)=>{
        peoplesProfile += `
         <div class="people_profile">
-              <div>
-                <img src="${people.profile_image}" alt="tusharKumarPhoto" class="my_photo" />
-              </div>
-              <div class="people_info">
+              <img src="${people.profile_image}" alt="tusharKumarPhoto" class="my_photo" />
+               <div class="people_info">
                 <h3>${people.profile_name}</h3>
                 <p>${people.profile_id}</p>
               </div>
-              <div>
-                <button class="follow_btn" style="margin-left: 2.1rem;">Follow</button>
-              </div>
-            </div>
+               <button class="follow_btn">Follow</button>
+        </div>
         `
       })
       peopleYouMayKnow.insertAdjacentHTML("beforeend", peoplesProfile);
