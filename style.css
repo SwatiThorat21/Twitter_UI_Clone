@@ -513,14 +513,14 @@ cursor: pointer;
 
 .trending_tweets p,
 .people_info p {
-  font-size: 0.8rem;
+  font-size: 0.9rem;
   margin: 0;
   color: #657786;
 }
 
 .trending_tweets h2,
 .people_info h3 {
-  font-size: 0.9rem;
+  font-size: 1rem;
   margin: 0;
 }
 
@@ -557,7 +557,7 @@ cursor: pointer;
 }
 .people_profile {
   display: grid;
-  grid-template-columns: 0.6fr 1.5fr 0.8fr;
+  grid-template-columns: 0.6fr 1.5fr 0.7fr;
   padding: 1rem;
   cursor: pointer;
   align-items: center;
