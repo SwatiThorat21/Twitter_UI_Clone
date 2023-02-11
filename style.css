@@ -248,6 +248,7 @@ body {
   align-items: center;
   justify-content: flex-start;
   padding-left: 2.5rem;
+  margin-top: 0.6rem;
 }
 
 .icons-1 {
@@ -503,7 +504,7 @@ cursor: pointer;
 }
 
 .trendingTweet{
-  padding: 0.8rem 0 0.8rem 1rem;
+  padding: 0.8rem 1rem 0.8rem 1rem;
 
 }
 
@@ -516,6 +517,14 @@ cursor: pointer;
   font-size: 0.9rem;
   margin: 0;
   color: #657786;
+}
+
+.trending_tweets p{
+  display: flex;
+}
+
+.trending_p{
+  flex-grow: 1;
 }
 
 .trending_tweets h2,

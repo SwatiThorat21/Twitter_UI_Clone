@@ -73,7 +73,7 @@ function fetchTweets() {
       data.trending.forEach((trend)=>{
         trendingTweetsHTML += `
             <div class="trendingTweet">
-            <p>${trend.trendingIn}<i class="fa fa-ellipsis-h" aria-hidden="true" style="margin-left: 9rem;"></i></p>
+            <p><span class="trending_p">${trend.trendingIn}</span><i class="fa fa-ellipsis-h" aria-hidden="true"></i></p>
             <h2>${trend.hashTag}</h2>
             <p>${trend.trendingWith}</p>
             </div>
