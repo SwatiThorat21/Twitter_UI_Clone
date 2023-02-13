@@ -642,13 +642,15 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 6rem;
+    gap: 5.5rem;
     position: fixed;
     bottom: 0;
     background-color: white;
     width: 100%;
     border-top: 0.2px solid rgb(219, 218, 218, 0.5);
     padding: 1rem;
+    padding-bottom: 1rem;
+    font-size: 0.8rem;
   }
   .post_tweet {
     display: none;
@@ -658,7 +660,7 @@ body {
   }
 
   .home_page {
-    width: 26rem;
+    width: 24rem;
     font-size: 0.9rem;
     border-left: none;
     border-right: none;
@@ -666,19 +668,19 @@ body {
   }
   
   .tweet {
-    width: 24.2rem;
+    width: 23.4rem;
     padding: 0.5rem 0.6rem 0.5rem 0;
   }
   .show_tweets {
-    width: 26rem;
+    width: 24rem;
   }
 
   #home_page_moving {
-    width: 26rem;
+    width: 24rem;
   }
 
   #home_page_sticky {
-    width: 26rem;
+    width: 24rem;
     background-color: rgba(255, 255, 255);
     backdrop-filter: none;
   }
