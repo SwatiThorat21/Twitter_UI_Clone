@@ -642,49 +642,125 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 7rem;
+    gap: 6rem;
     position: fixed;
     bottom: 0;
     background-color: white;
     width: 100%;
     border-top: 0.2px solid rgb(219, 218, 218, 0.5);
+    padding: 1rem;
   }
-  .post_tweet{
+  .post_tweet {
     display: none;
   }
-  .links_tweet{
+  .links_tweet {
     display: none;
   }
 
   .home_page {
-    width: 20rem;
-    font-size: 0.5rem;
+    width: 26rem;
+    font-size: 0.9rem;
+    border-left: none;
+    border-right: none;
+    padding-bottom: 3rem;
   }
+  
   .tweet {
-    width: 20rem;
+    width: 24.2rem;
+    padding: 0.5rem 0.6rem 0.5rem 0;
   }
   .show_tweets {
-    width: 20rem;
+    width: 26rem;
   }
 
   #home_page_moving {
-    width: 20rem;
+    width: 26rem;
   }
 
   #home_page_sticky {
-    width: 20rem;
+    width: 26rem;
+    background-color: rgba(255, 255, 255);
+    backdrop-filter: none;
+  }
+
+  #home_page_sticky h3 {
+    display: none;
   }
 
   .explore_button {
     font-family: "Public Sans", sans-serif;
-    font-size: 0.7rem;
-    padding: 3px 2px;
+    font-size: 1rem;
+    padding: 8px 2px;
   }
 
   .show_tweets h3 {
-      font-size: 0.6rem;
+    font-size: 0.9rem;
   }
 
+  .tweet_image {
+    border-radius: 8px;
+    width: 20rem;
+    height: 12rem;
+    margin-left: 2.9rem;
+  }
+
+  .my_photo {
+    width: 37px;
+    height: 39px;
+    border-radius: 50%;
+    cursor: pointer;
+  }
+
+  .swati_photo {
+    width: 37px;
+    height: 39px;
+    border-radius: 50%;
+    cursor: pointer;
+  }
+
+  #mobileView_icon{
+    display: flex;
+    align-items: center;
+    margin-top: 1rem;
+    gap: 9rem;
+    background-color: white;
+  }
+
+  .tweet_content h3 {
+    font-size: 0.8rem;
+  }
+  .--replied p {
+    font-size: 0.6rem;
+    margin-left: 0.5rem;
+  }
+
+  .p {
+    margin: 0 0 0.5rem 3rem;
+  }
+
+  .tweet_reply_links {
+    display: flex;
+    gap: 18px;
+    align-items: center;
+    justify-content: flex-start;
+    padding-left: 2.7rem;
+    margin-top: 0.4rem;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  #comment_icon,
+  #retweet_icon,
+  #like_icon,
+  #views_icon,
+  #share_icon {
+    font-size: 12px;
+  }
+
+  .icons-2 {
+    margin-left: 0;
+    border-radius: 15px;
+    cursor: pointer;
+  }
 }
 
 @media only screen and (max-width: 450px) {
