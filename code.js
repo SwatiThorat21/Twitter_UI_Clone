@@ -14,8 +14,9 @@ function fetchTweets() {
       let peoplesProfile = "";
 
       data.tweets.forEach((tweet) => {
-        let tweetHTML = `<div class="tweet">`;
         if(!tweet.profileName && tweet.profileTweetID && tweet.tweetContent) return;
+        
+        let tweetHTML = `<div class="tweet">`;
         
         if (tweet.replied) {
           tweetHTML += `<div class="--replied">
