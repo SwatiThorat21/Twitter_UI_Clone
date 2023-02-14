@@ -639,7 +639,7 @@ body {
 }
 
 .sidebarResponsive_icons:hover {
- background-color: #e1e8ed;
+  background-color: #e1e8ed;
 }
 
 #twitter_logo_sidebar {
@@ -652,8 +652,153 @@ body {
   border-radius: 50%;
 }
 
-#twitter_logo_sidebar:hover{
-background-color: #0f83cb;
+#twitter_logo_sidebar:hover {
+  background-color: #0f83cb;
+}
+
+@media only screen and (max-width: 1285px) {
+  .sidenavbar_left {
+    display: none;
+  }
+  #sidenavbar_left_responsive {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    width: 88px;
+    height: 100%;
+    padding-left: 10px;
+    padding-right: 10px;
+    position: fixed;
+    right: 77%;
+  }
+  #footer {
+    display: none;
+  }
+  .home_page {
+    width: 37rem;
+    font-size: 1rem;
+  }
+  .tweet {
+    width: 33.2rem;
+  }
+  .show_tweets {
+    width: 37rem;
+  }
+  #home_page_moving {
+    width: 37rem;
+  }
+  #home_page_sticky {
+    width: 37rem;
+  }
+  .tweet_image {
+    border-radius: 12px;
+    width: 27rem;
+    height: 16rem;
+  }
+  .links_tweet {
+    gap: 8rem;
+    margin-left: 5rem;
+  }
+  .search_bar {
+    width: 17rem;
+  }
+  .trending_tweets_container {
+    width: 18rem;
+  }
+  .trending_tweets_title h2 {
+    font-size: 1rem;
+  }
+  .trending_tweets p,
+  .people_info p {
+    font-size: 0.8rem;
+  }
+  .trending_tweets h2,
+  .people_info h3 {
+    font-size: 0.9rem;
+  }
+  .who_to_follow {
+    width: 18rem;
+  }
+  .container {
+    display: flex;
+    justify-content: flex-end;
+  }
+}
+
+@media only screen and (max-width: 1228px) {
+  #sidenavbar_left_responsive {
+    position: fixed;
+    right: 80%;
+  }
+}
+
+@media only screen and (max-width: 1180px) {
+  #sidenavbar_left_responsive {
+    position: fixed;
+    right: 82%;
+  }
+}
+
+@media only screen and (max-width: 1140px) {
+  #sidenavbar_left_responsive {
+    position: fixed;
+    right: 85%;
+  }
+}
+
+@media only screen and (max-width: 1110px) {
+  #sidenavbar_left_responsive {
+    position: fixed;
+    right: 87%;
+  }
+}
+
+@media only screen and (max-width: 1080px) {
+  #sidenavbar_left_responsive {
+    position: fixed;
+    right: 90%;
+  }
+}
+
+@media only screen and (max-width: 1058px) {
+  #sidenavbar_left_responsive {
+    position: fixed;
+    right: 89%;
+  }
+  .home_page {
+    width: 35rem;
+    font-size: 1rem;
+  }
+  .tweet {
+    width: 33.2rem;
+  }
+  .show_tweets {
+    width: 35rem;
+  }
+  #home_page_moving {
+    width: 35rem;
+  }
+  #home_page_sticky {
+    width: 35rem;
+  }
+  .tweet_image {
+    border-radius: 12px;
+    width: 27rem;
+    height: 16rem;
+  }
+  .links_tweet {
+    gap: 8rem;
+    margin-left: 5rem;
+  }
+
+}
+
+@media only screen and (max-width: 1020px) {
+  #sidenavbar_left_responsive {
+    position: fixed;
+    right: 91%;
+  }
 }
 
 @media only screen and (max-width: 999px) {
@@ -665,6 +810,11 @@ background-color: #0f83cb;
     display: none;
   }
 
+  .container {
+    display: flex;
+    justify-content: center;
+  }
+
   #sidenavbar_left_responsive {
     display: flex;
     flex-direction: column;
@@ -672,13 +822,20 @@ background-color: #0f83cb;
     align-items: center;
     width: 88px;
     height: 100%;
-    position: fixed;
-    left: 0;
     padding-left: 30px;
     padding-right: 12px;
+    position: fixed;
+    right: 80%;
   }
   #footer {
     display: none;
+  }
+}
+
+@media only screen and (max-width: 850px) {
+  #sidenavbar_left_responsive {
+    position: fixed;
+    right: 85%;
   }
 }
 
@@ -707,9 +864,9 @@ background-color: #0f83cb;
     display: none;
   }
 
-  .sidebarResponsive_icons {
+  /* .sidebarResponsive_icons {
     width: 20px;
-  }
+  } */
 
   .home_page {
     width: 35rem;
@@ -758,17 +915,17 @@ background-color: #0f83cb;
     align-items: center;
     width: 78px;
     height: 100%;
-    position: fixed;
-    left: 0;
     padding-left: 8px;
     padding-right: 8px;
+    position: fixed;
+    right: 80%;
   }
   #footer {
     display: none;
   }
 
   .sidebarResponsive_icons {
-    width: 20px;
+    width: 24px;
   }
 
   .home_page {
