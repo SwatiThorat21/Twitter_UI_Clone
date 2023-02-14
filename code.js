@@ -15,18 +15,17 @@ function fetchTweets() {
 
       data.tweets.forEach((tweet) => {
         let tweetHTML = `<div class="tweet">`;
-
+        
+        if (!(tweet.profileName && tweet.profileTweetID && tweet.tweetContent))
+          return;
+          
         if (tweet.replied) {
           tweetHTML += `<div class="--replied">
           <i class="fa-solid fa-comment"></i>
           <p>${tweet.replied}</p>
           </div>`;
         }
-        if (
-          !(tweet.profileName && tweet.profileTweetID && tweet.tweetContent)
-        ) {
-          return;
-        }
+
         if (
           tweet.profileImage &&
           tweet.profileName &&
