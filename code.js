@@ -14,17 +14,19 @@ function fetchTweets() {
       let peoplesProfile = "";
 
       data.tweets.forEach((tweet) => {
-        if(!tweet.profileName && tweet.profileTweetID && tweet.tweetContent) return;
-        
         let tweetHTML = `<div class="tweet">`;
-        
+
         if (tweet.replied) {
           tweetHTML += `<div class="--replied">
-            <i class="fa-solid fa-comment"></i>
-            <p>${tweet.replied}</p>
-            </div>`;
+          <i class="fa-solid fa-comment"></i>
+          <p>${tweet.replied}</p>
+          </div>`;
         }
-
+        if (
+          !(tweet.profileName && tweet.profileTweetID && tweet.tweetContent)
+        ) {
+          return;
+        }
         if (
           tweet.profileImage &&
           tweet.profileName &&
@@ -55,7 +57,12 @@ function fetchTweets() {
           `;
         }
 
-        if (tweet.tweetCommentsCount && tweet.tweetRetweetCount && tweet.tweeLikesCount && tweet.tweetViewsCount) {
+        if (
+          tweet.tweetCommentsCount &&
+          tweet.tweetRetweetCount &&
+          tweet.tweeLikesCount &&
+          tweet.tweetViewsCount
+        ) {
           tweetHTML += `
           <div class="tweet_reply_links">
               <div id="comment_icon"><i class="fa-regular fa-comment icons-2" id="icon-1"></i> ${tweet.tweetCommentsCount}</div>
@@ -70,7 +77,7 @@ function fetchTweets() {
 
         tweetsHTML += tweetHTML;
       });
-      
+
       tweetsContainer.insertAdjacentHTML("beforeend", tweetsHTML);
 
       data.trending.forEach((trend) => {
