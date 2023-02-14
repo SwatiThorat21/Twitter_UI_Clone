@@ -15,6 +15,9 @@ function fetchTweets() {
 
       data.tweets.forEach((tweet) => {
         let tweetHTML = `<div class="tweet">`;
+        // if(!tweet.profileName && !tweet.profileTweetID && !tweet.tweetContent){
+        //   return;
+        // }
         if (tweet.replied) {
           tweetHTML += `<div class="--replied">
             <i class="fa-solid fa-comment"></i>
@@ -29,12 +32,12 @@ function fetchTweets() {
           tweet.tweetContent
         ) {
           tweetHTML += `
-          <div class="tweetContent">
+          <div class="tweet_content">
               <div id="tweet_profile">
                 <img src="${tweet.profileImage}" class="my_photo" alt="johnErlichman" />
                 <h3>
-                  <span id="profileName">${tweet.profileName}</span>
-                  <img src="images/blue-tick.png" class="tweetContent_icon" /> <span class="profileTweetID">${tweet.profileTweetID}</span>
+                  <span id="profile_name">${tweet.profileName}</span>
+                  <img src="images/blue-tick.png" class="tweetContent_icon" /> <span class="tweet_id">${tweet.profileTweetID}</span>
                 </h3>
                 <div id="more">
                   <i class="fa fa-ellipsis-h" aria-hidden="true"></i>
@@ -56,9 +59,9 @@ function fetchTweets() {
           tweetHTML += `
           <div class="tweet_reply_links">
               <div id="comment_icon"><i class="fa-regular fa-comment icons-2" id="icon-1"></i> ${tweet.tweetCommentsCount}</div>
-              <div id="tweetRetweetCount_icon"><i class="fa-solid fa-tweetRetweetCount icons-2" id="icon-2"></i> ${tweet.tweetRetweetCount}</div>
+              <div id="retweet_icon"><i class="fa-solid fa-retweet icons-2" id="icon-2"></i> ${tweet.tweetRetweetCount}</div>
               <div id="like_icon"><i class="fa-regular fa-heart icons-2" id="icon-3"></i> ${tweet.tweeLikesCount}</div>
-              <div id="tweetViewsCount_icon"><i class="fa-sharp fa-solid fa-chart-simple icons-2" id="icon-4"></i> ${tweet.tweetViewsCount}</div>
+              <div id="views_icon"><i class="fa-sharp fa-solid fa-chart-simple icons-2" id="icon-4"></i> ${tweet.tweetViewsCount}</div>
               <div id="share_icon"><i class="fa-solid fa-arrow-up-from-bracket icons-2" id="icon-5"></i></div>
           </div>
           `;

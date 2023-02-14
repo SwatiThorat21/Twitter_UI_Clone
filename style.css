@@ -418,10 +418,6 @@ body {
   font-weight: 500;
 }
 
-/* .p-1::after {
-  content: "\a";
-  white-space: pre;
-} */
 .p {
   margin: 0 0 0.5rem 3.8rem;
   line-height: 1.5rem;
@@ -429,7 +425,6 @@ body {
 }
 
 .p-1 {
-  /* padding-left: 0.8rem; */
   margin: 0.5rem 0;
   margin-top: 0;
   color: rgba(0, 0, 0, 0.85);
@@ -440,7 +435,6 @@ body {
 .p3 {
   padding-left: 0.8rem;
   margin: 0.5rem 0;
-  /* line-height: 2.5rem; */
 }
 
 .hashtag_link:hover {
@@ -639,6 +633,13 @@ body {
 
 .sidebarResponsive_icons {
   width: 26px;
+  cursor: pointer;
+  padding: 0.7rem;
+  border-radius: 50%;
+}
+
+.sidebarResponsive_icons:hover {
+ background-color: #e1e8ed;
 }
 
 #twitter_logo_sidebar {
@@ -649,6 +650,10 @@ body {
   cursor: pointer;
   padding: 0.7rem;
   border-radius: 50%;
+}
+
+#twitter_logo_sidebar:hover{
+background-color: #0f83cb;
 }
 
 @media only screen and (max-width: 999px) {
@@ -669,7 +674,7 @@ body {
     height: 100%;
     position: fixed;
     left: 0;
-    padding-left: 12px;
+    padding-left: 30px;
     padding-right: 12px;
   }
   #footer {
