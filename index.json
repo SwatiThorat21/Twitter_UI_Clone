@@ -2,90 +2,88 @@
   "tweets": [
     {
       "replied": "Elon Musk replied",
-      "profile_image": "images/johnErlichman.jpg",
-      "profile_name": "Jon Erlichman",
-      "tweet_id": "@JonErlichman . Jan 22",
-      "tweet_content": "Tesla got started 20 years ago.<br>At the time, it was unclear if the company would ever sell one vehicle.<br>Last year, it sold more than 1 million.<br>And this year,Tesla's revenue may top $100 billion.<br>Here are 8 influential momemnts from the past two decades...👇🧵",
-      "tweetContent_handsDown": "images/hand-down.png",
-      "tweetContent_thread": "images/thread-reel.png",
-      "tweet_content_image": "images/ElonMusk (1).jpg",
-      "comments": "538",
-      "retweet": "2,340",
-      "likes": "26.2K",
-      "views": "6.6M"
+      "profileImage": "images/johnErlichman.jpg",
+      "profileName": "Jon Erlichman",
+      "profileTweetID": "@JonErlichman . Jan 22",
+      "tweetContent": "Tesla got started 20 years ago.<br>At the time, it was unclear if the company would ever sell one vehicle.<br>Last year, it sold more than 1 million.<br>And this year,Tesla's revenue may top $100 billion.<br>Here are 8 influential momemnts from the past two decades...👇🧵",
+      "tweetContentImage": "images/ElonMusk (1).jpg",
+      "tweetCommentsCount": "538",
+      "tweetRetweetCount": "2,340",
+      "tweeLikesCount": "26.2K",
+      "tweetViewsCount": "6.6M"
     },
     {
-      "profile_image": "images/ElonMusk.jpg",
-      "profile_name": "Elon Musk",
-      "tweet_id": "@elonmusk . Jan 23",
-      "tweet_content": " Replying to <a>@JonErlichman</a></span><br> Good thread",
-      "comments": "1,069",
-      "retweet": "1,178",
-      "likes": "28.2K",
-      "views": "5M"
+      "profileImage": "images/ElonMusk.jpg",
+      "profileName": "Elon Musk",
+      "profileTweetID": "@elonmusk . Jan 23",
+      "tweetContent": " Replying to <a>@JonErlichman</a></span><br> Good thread",
+      "tweetCommentsCount": "1,069",
+      "tweetRetweetCount": "1,178",
+      "tweeLikesCount": "28.2K",
+      "tweetViewsCount": "5M"
     },
     {
-      "profile_image": "images/anandMahindra.jpg",
-      "profile_name": "anand mahindra",
-      "tweet_id": "@anandmahindra . 2h",
-      "tweet_content": "A flying bike from a Japanese startup. Will cost around $800K in the U.S.I suspect it will be used mainly by police forces around the world; leading to some interesting new chase sequences in movies...",
-      "tweet_content_image": "images/flying-bike.png",
-      "comments": "196",
-      "retweet": "804",
-      "likes": "5,699",
-      "views": "246.7"
+      "profileImage": "images/anandMahindra.jpg",
+      "profileName": "anand mahindra",
+      "profileTweetID": "@anandmahindra . 2h",
+      "tweetContent": "A flying bike from a Japanese startup. Will cost around $800K in the U.S.I suspect it will be used mainly by police forces around the world; leading to some interesting new chase sequences in movies...",
+      "tweetContentImage": "images/flying-bike.png",
+      "tweetCommentsCount": "196",
+      "tweetRetweetCount": "804",
+      "tweeLikesCount": "5,699",
+      "tweetViewsCount": "246.7"
     },
     {
       "replied": "You might like .See more",
-      "profile_image": "images/vaibhav.jpg",
-      "profile_name": "Vaibhav Matere",
-      "tweet_id": "@vaibhav_matere .23h",
-      "tweet_content": "Started learning @figma in detailed today from FrontendMasters and now it's down! #figmadown",
-      "comments": "5",
-      "retweet": "1",
-      "likes": "24",
-      "views": "4,441"
+      "profileImage": "images/vaibhav.jpg",
+      "profileName": "Vaibhav Matere",
+      "profileTweetID": "@vaibhav_matere .23h",
+      "tweetContent": "Started learning @figma in detailed today from FrontendMasters and now it's down! #figmadown",
+      "tweetCommentsCount": "5",
+      "tweetRetweetCount": "1",
+      "tweeLikesCount": "24",
+      "tweetViewsCount": "4,441"
     },
     {
-      "profile_image": "images/modi.png",
-      "profile_name": "PMO India",
-      "tweet_id": "@PMOIndia . 21m",
-      "tweet_content": "India government organization राष्ट्रपति सीसी कल हमारे गणतंत्र दिवस समारोह में मुख्य अतिथि के रूप में शामिल होंगे। यह पूरे भारत के लिए सम्मान और हर्ष का विषय है: PM @narendramodi",
-      "comments": "5",
-      "retweet": "1",
-      "likes": "24",
-      "views": "4,441"
+      "profileImage": "images/modi.png",
+      "profileName": "PMO India",
+      "profileTweetID": "@PMOIndia . 21m",
+      "tweetContent": "India government organization राष्ट्रपति सीसी कल हमारे गणतंत्र दिवस समारोह में मुख्य अतिथि के रूप में शामिल होंगे। यह पूरे भारत के लिए सम्मान और हर्ष का विषय है: PM @narendramodi",
+      "tweetCommentsCount": "5",
+      "tweetRetweetCount": "1",
+      "tweeLikesCount": "24",
+      "tweetViewsCount": "4,441"
     },
     {
-      "profile_image": "images/mosh.jpg",
-      "profile_name": "Mosh",
-      "tweet_id": "@moshhamedani . Jan24",
-      "tweet_content": "My fellow YouTubers: how do you deal with spammers leaving a reply on every comment below your videos? I get a lot of these pretending to be me just to get people message them on telegram or WhatsApp!",
-      "comments": "15",
-      "retweet": "7",
-      "likes": "133",
-      "views": "20.2K"
+      "profileImage": "images/mosh.jpg",
+      "profileName": "Mosh",
+      "profileTweetID": "@moshhamedani . Jan24",
+      "tweetContent": "My fellow YouTubers: how do you deal with spammers leaving a reply on every comment below your videos? I get a lot of these pretending to be me just to get people message them on telegram or WhatsApp!",
+      "tweetCommentsCount": "15",
+      "tweetRetweetCount": "7",
+      "tweeLikesCount": "133",
+      "tweetViewsCount": "20.2K"
     },
     {
-      "profile_image": "images/ishant.jpg",
-      "profile_name": "Ishant Juyal",
-      "tweet_id": "@juyal_ishant . Jan23",
-      "tweet_content": "Reconsidering all the decisions I took in last 3 months.",
-      "comments": "2",
-      "retweet": "1",
-      "likes": "13",
-      "views": "1,191"
+      "profileImage": "images/ishant.jpg",
+      "profileName": "Ishant Juyal",
+      "profileTweetID": "@juyal_ishant . Jan23",
+      "tweetContent": "Reconsidering all the decisions I took in last 3 months.",
+      "tweetCommentsCount": "2",
+      "tweetRetweetCount": "1",
+      "tweeLikesCount": "13",
+      "tweetViewsCount": "1,191"
     },
     {
-      "profile_image": "images/ndtv.png",
-      "profile_name": "NDTV",
-      "tweet_id": "@ndtv . 16h",
-      "tweet_content": "#JNU",
-      "tweet_content_image": "images/NDTV-news.jfif",
-      "comments": "5",
-      "retweet": "11",
-      "likes": "73",
-      "views": "2,131"
+      "profileImage": "images/ndtv.png",
+      "profileName": "NDTV",
+      "profileTweetID": "@ndtv . 16h",
+      "tweetContent": "#JNU",
+      "tweetContentImage": "images/NDTV-news.jfif",
+      "tweetCommentsCount": "5",
+      "tweetRetweetCount": "11",
+      "tweeLikesCount": "73",
+      "tweetViewsCount": "2,131"
     }
   ],
 
@@ -117,21 +115,21 @@
     }
   ],
 
-  "whoToFollow":[
+  "whoToFollow": [
     {
-        "profile_image":"images/tushar.jpg",
-        "profile_name":"Tushar Kumar",
-        "profile_id": "@_prachand_"
+      "profileImage": "images/tushar.jpg",
+      "profileName": "Tushar Kumar",
+      "profile_id": "@_prachand_"
     },
     {
-        "profile_image":"images/ravi.jpg",
-        "profile_name":"Ravi Roushan Sinha",
-        "profile_id": "@ravirrs1"
+      "profileImage": "images/ravi.jpg",
+      "profileName": "Ravi Roushan Sinha",
+      "profile_id": "@ravirrs1"
     },
     {
-        "profile_image":"images/jsw.jpg",
-        "profile_name":"JSW Steel",
-        "profile_id": "@jswsteel"
+      "profileImage": "images/jsw.jpg",
+      "profileName": "JSW Steel",
+      "profile_id": "@jswsteel"
     }
   ]
 }

@@ -6,8 +6,8 @@ function fetchTweets() {
       return res.json();
     })
     .then((data) => {
-      let tweets_Container = document.getElementById("tweets_container");
-      let trending_tweets = document.getElementById("trending_tweets");
+      let tweetsContainer = document.getElementById("tweets_container");
+      let trendingTweets = document.getElementById("trending_tweets");
       let peopleYouMayKnow = document.getElementById("peopleYouMayKnow");
       let tweetsHTML = "";
       let trendingTweetsHTML = "";
@@ -23,42 +23,42 @@ function fetchTweets() {
         }
 
         if (
-          tweet.profile_image &&
-          tweet.profile_name &&
-          tweet.tweet_id &&
-          tweet.tweet_content
+          tweet.profileImage &&
+          tweet.profileName &&
+          tweet.profileTweetID &&
+          tweet.tweetContent
         ) {
           tweetHTML += `
-          <div class="tweet_content">
+          <div class="tweetContent">
               <div id="tweet_profile">
-                <img src="${tweet.profile_image}" class="my_photo" alt="johnErlichman" />
+                <img src="${tweet.profileImage}" class="my_photo" alt="johnErlichman" />
                 <h3>
-                  <span id="profile_name">${tweet.profile_name}</span>
-                  <img src="images/blue-tick.png" class="tweetContent_icon" /> <span class="tweet_id">${tweet.tweet_id}</span>
+                  <span id="profileName">${tweet.profileName}</span>
+                  <img src="images/blue-tick.png" class="tweetContent_icon" /> <span class="profileTweetID">${tweet.profileTweetID}</span>
                 </h3>
                 <div id="more">
                   <i class="fa fa-ellipsis-h" aria-hidden="true"></i>
                 </div>
               </div>
               <p class="p">
-                <span class="p-1">${tweet.tweet_content}</span>
+                <span class="p-1">${tweet.tweetContent}</span>
               </p>
           </div> `;
         }
 
-        if (tweet.tweet_content_image) {
+        if (tweet.tweetContentImage) {
           tweetHTML += `
-          <img src="${tweet.tweet_content_image}" class="tweet_image" alt="ElonMusk">
+          <img src="${tweet.tweetContentImage}" class="tweet_image" alt="ElonMusk">
           `;
         }
 
-        if (tweet.comments && tweet.retweet && tweet.likes && tweet.views) {
+        if (tweet.tweetCommentsCount && tweet.tweetRetweetCount && tweet.tweeLikesCount && tweet.tweetViewsCount) {
           tweetHTML += `
           <div class="tweet_reply_links">
-              <div id="comment_icon"><i class="fa-regular fa-comment icons-2" id="icon-1"></i> ${tweet.comments}</div>
-              <div id="retweet_icon"><i class="fa-solid fa-retweet icons-2" id="icon-2"></i> ${tweet.retweet}</div>
-              <div id="like_icon"><i class="fa-regular fa-heart icons-2" id="icon-3"></i> ${tweet.likes}</div>
-              <div id="views_icon"><i class="fa-sharp fa-solid fa-chart-simple icons-2" id="icon-4"></i> ${tweet.views}</div>
+              <div id="comment_icon"><i class="fa-regular fa-comment icons-2" id="icon-1"></i> ${tweet.tweetCommentsCount}</div>
+              <div id="tweetRetweetCount_icon"><i class="fa-solid fa-tweetRetweetCount icons-2" id="icon-2"></i> ${tweet.tweetRetweetCount}</div>
+              <div id="like_icon"><i class="fa-regular fa-heart icons-2" id="icon-3"></i> ${tweet.tweeLikesCount}</div>
+              <div id="tweetViewsCount_icon"><i class="fa-sharp fa-solid fa-chart-simple icons-2" id="icon-4"></i> ${tweet.tweetViewsCount}</div>
               <div id="share_icon"><i class="fa-solid fa-arrow-up-from-bracket icons-2" id="icon-5"></i></div>
           </div>
           `;
@@ -66,33 +66,33 @@ function fetchTweets() {
         tweetHTML += `</div>`;
 
         tweetsHTML += tweetHTML;
-
       });
-      tweets_Container.insertAdjacentHTML("beforeend", tweetsHTML);
+      
+      tweetsContainer.insertAdjacentHTML("beforeend", tweetsHTML);
 
-      data.trending.forEach((trend)=>{
+      data.trending.forEach((trend) => {
         trendingTweetsHTML += `
             <div class="trendingTweet">
             <p><span class="trending_p">${trend.trendingIn}</span><i class="fa fa-ellipsis-h" aria-hidden="true"></i></p>
             <h2>${trend.hashTag}</h2>
             <p>${trend.trendingWith}</p>
             </div>
-        `
-      })
-      trending_tweets.insertAdjacentHTML("beforeend", trendingTweetsHTML);
+        `;
+      });
+      trendingTweets.insertAdjacentHTML("beforeend", trendingTweetsHTML);
 
-      data.whoToFollow.forEach((people)=>{
-       peoplesProfile += `
+      data.whoToFollow.forEach((people) => {
+        peoplesProfile += `
         <div class="people_profile">
-              <img src="${people.profile_image}" alt="tusharKumarPhoto" class="my_photo" />
+              <img src="${people.profileImage}" alt="tusharKumarPhoto" class="my_photo" />
                <div class="people_info">
-                <h3>${people.profile_name}</h3>
+                <h3>${people.profileName}</h3>
                 <p>${people.profile_id}</p>
               </div>
                <button class="follow_btn">Follow</button>
         </div>
-        `
-      })
+        `;
+      });
       peopleYouMayKnow.insertAdjacentHTML("beforeend", peoplesProfile);
     });
 }

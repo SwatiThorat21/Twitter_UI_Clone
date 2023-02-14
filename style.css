@@ -651,7 +651,6 @@ body {
   border-radius: 50%;
 }
 
-
 @media only screen and (max-width: 999px) {
   .sidenavbar_left {
     display: none;
@@ -710,11 +709,9 @@ body {
   .home_page {
     width: 35rem;
     font-size: 1rem;
-  
   }
   .tweet {
     width: 33.2rem;
-  
   }
   .show_tweets {
     width: 35rem;
@@ -726,23 +723,19 @@ body {
 
   #home_page_sticky {
     width: 35rem;
-    
   }
 
-.tweet_image {
+  .tweet_image {
     border-radius: 12px;
     width: 27rem;
     height: 16rem;
-}
+  }
 
-.links_tweet {
-  gap: 8rem;
-  margin-left: 5rem;
+  .links_tweet {
+    gap: 8rem;
+    margin-left: 5rem;
+  }
 }
- 
- 
-}
-
 
 @media only screen and (max-width: 699px) {
   .sidenavbar_left {
@@ -776,11 +769,9 @@ body {
   .home_page {
     width: 27rem;
     font-size: 0.9rem;
-  
   }
   .tweet {
     width: 25rem;
-  
   }
   .show_tweets {
     width: 27rem;
@@ -792,32 +783,30 @@ body {
 
   #home_page_sticky {
     width: 27rem;
-    
   }
 
-.tweet_image {
+  .tweet_image {
     border-radius: 8px;
     width: 21rem;
     height: 12rem;
-}
+  }
 
-.links_tweet {
-  gap: 3.5rem;
-  margin-left: 5rem;
-}
+  .links_tweet {
+    gap: 3.5rem;
+    margin-left: 5rem;
+  }
 
-.whats_happening {
-  font-size: 1.1rem;
-}
+  .whats_happening {
+    font-size: 1.1rem;
+  }
 
-.tweet_button2 {
-   padding: 7px 14px;
+  .tweet_button2 {
+    padding: 7px 14px;
+  }
+  .explore_button {
+    padding: 13px 20px;
+  }
 }
-.explore_button {
-  padding: 13px 20px;
-}
-}
-
 
 @media only screen and (max-width: 550px) {
   .sidenavbar_left {
@@ -828,7 +817,7 @@ body {
     display: none;
   }
 
-  #sidenavbar_left_responsive{
+  #sidenavbar_left_responsive {
     display: none;
   }
 
@@ -957,6 +946,4 @@ body {
     border-radius: 15px;
     cursor: pointer;
   }
-
- 
 }
