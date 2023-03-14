@@ -124,14 +124,81 @@ function searchTweet(e) {
     })
     .then((data) => {
       let searchInputText = e.target.value.toUpperCase();
-      
-        data.tweets.forEach((tweet) => {
+
+      let tweetsContainer = document.getElementById("tweets_container");
+      let tweetsHTML = "";
+
+      data.tweets.forEach((tweet) => {
         if (
-          tweet.profileName.includes(searchInputText) &&
-          tweet.tweetContent.includes(searchInputText)
+          tweet.profileName.toUpperCase().includes(searchInputText) ||
+          tweet.tweetContent.toUpperCase().includes(searchInputText)
         ) {
-          console.log(tweet);
+          let tweetHTML = `<div class="tweet">`;
+
+          if (
+            !(tweet.profileName && tweet.profileTweetID && tweet.tweetContent)
+          )
+            return;
+
+          if (tweet.replied) {
+            tweetHTML += `<div class="--replied">
+              <i class="fa-solid fa-comment"></i>
+              <p>${tweet.replied}</p>
+              </div>`;
+          }
+
+          if (
+            tweet.profileImage &&
+            tweet.profileName &&
+            tweet.profileTweetID &&
+            tweet.tweetContent
+          ) {
+            tweetHTML += `
+              <div class="tweet_content">
+                  <div id="tweet_profile">
+                    <img src="${tweet.profileImage}" class="my_photo" alt="johnErlichman" />
+                    <h3>
+                      <span id="profile_name">${tweet.profileName}</span>
+                      <img src="images/blue-tick.png" class="tweetContent_icon" /> <span class="tweet_id">${tweet.profileTweetID}</span>
+                    </h3>
+                    <div id="more">
+                      <i class="fa fa-ellipsis-h" aria-hidden="true"></i>
+                    </div>
+                  </div>
+                  <p class="p">
+                    <span class="p-1">${tweet.tweetContent}</span>
+                  </p>
+              </div> `;
+          }
+
+          if (tweet.tweetContentImage) {
+            tweetHTML += `
+              <img src="${tweet.tweetContentImage}" class="tweet_image" alt="ElonMusk">
+              `;
+          }
+
+          if (
+            tweet.tweetCommentsCount &&
+            tweet.tweetRetweetCount &&
+            tweet.tweeLikesCount &&
+            tweet.tweetViewsCount
+          ) {
+            tweetHTML += `
+              <div class="tweet_reply_links">
+                  <div id="comment_icon"><i class="fa-regular fa-comment icons-2" id="icon-1"></i> ${tweet.tweetCommentsCount}</div>
+                  <div id="retweet_icon"><i class="fa-solid fa-retweet icons-2" id="icon-2"></i> ${tweet.tweetRetweetCount}</div>
+                  <div id="like_icon"><i class="fa-regular fa-heart icons-2" id="icon-3"></i> ${tweet.tweeLikesCount}</div>
+                  <div id="views_icon"><i class="fa-sharp fa-solid fa-chart-simple icons-2" id="icon-4"></i> ${tweet.tweetViewsCount}</div>
+                  <div id="share_icon"><i class="fa-solid fa-arrow-up-from-bracket icons-2" id="icon-5"></i></div>
+              </div>
+              `;
+          }
+          tweetHTML += `</div>`;
+
+          tweetsHTML += tweetHTML;
         }
       });
+
+      tweetsContainer.innerHTML= tweetsHTML;
     });
 }

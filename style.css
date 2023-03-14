@@ -495,6 +495,9 @@ input:focus {
   outline: 1px solid rgb(29, 155, 240);
   
 }
+.hide{
+  display: none;
+}
 
 .search_bar:focus {
   border: 1px solid rgb(29, 155, 240);
