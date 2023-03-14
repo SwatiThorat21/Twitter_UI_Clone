@@ -15,10 +15,10 @@ function fetchTweets() {
 
       data.tweets.forEach((tweet) => {
         let tweetHTML = `<div class="tweet">`;
-        
+
         if (!(tweet.profileName && tweet.profileTweetID && tweet.tweetContent))
           return;
-          
+
         if (tweet.replied) {
           tweetHTML += `<div class="--replied">
           <i class="fa-solid fa-comment"></i>
@@ -107,3 +107,31 @@ function fetchTweets() {
 }
 
 fetchTweets();
+
+let searchInput = document.getElementById("searchInput");
+searchInput.addEventListener("keydown", function (e) {
+  if (e.code === "Enter") {
+    searchTweet(e);
+  }
+});
+
+function searchTweet(e) {
+  fetch(
+    "https://raw.githubusercontent.com/SwatiThorat21/Twitter-clone/main/index.json"
+  )
+    .then((res) => {
+      return res.json();
+    })
+    .then((data) => {
+      let searchInputText = e.target.value.toUpperCase();
+      
+        data.tweets.forEach((tweet) => {
+        if (
+          tweet.profileName.includes(searchInputText) &&
+          tweet.tweetContent.includes(searchInputText)
+        ) {
+          console.log(tweet);
+        }
+      });
+    });
+}
