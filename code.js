@@ -126,7 +126,7 @@ function searchTweet(e) {
       let searchInputText = e.target.value.toUpperCase();
 
       let tweetsContainer = document.getElementById("tweets_container");
-      let tweetsHTML = "";
+      let searchedTweetsHTML = "";
 
       data.tweets.forEach((tweet) => {
         if (
@@ -195,10 +195,11 @@ function searchTweet(e) {
           }
           tweetHTML += `</div>`;
 
-          tweetsHTML += tweetHTML;
+          searchedTweetsHTML += tweetHTML;
         }
       });
 
-      tweetsContainer.innerHTML= tweetsHTML;
+      tweetsContainer.innerHTML= searchedTweetsHTML;
+    
     });
 }
